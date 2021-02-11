@@ -36,6 +36,7 @@
         padding: 12px 14px 12px 0;
         display: block;
         &:hover {
+          color: darken($footer-text-color, 5%);
           text-decoration: underline;
         }
       }
