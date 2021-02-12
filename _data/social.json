@@ -1,12 +1,12 @@
 [
   {
     "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
+    "link": "https://github.com/ThomasKimble",
     "image": "images/social/github.svg"
   },
   {
-    "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
-    "image": "images/social/twitter.svg"
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/thomas-oliver-kimble/",
+    "image": "images/social/linkedin.svg"
   }
 ]

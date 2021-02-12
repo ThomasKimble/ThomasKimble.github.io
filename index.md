@@ -1,12 +1,16 @@
 ---
-title: Jekyll Serif Theme
+title: Thomas Kimble
 layout: home
-description: Jekyll Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+description: Project Page for Thomas Kimble.
 intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Jekyll Business Theme.
+# Welcome to my Project Page
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+From robotics to computer science to design, feel free to check out some of my stuff on the [Projects](/projects/) page.
+
+To know more about me, have a read on the [About](/about/) page.
+
+If you have any questions or are hiring, you can find my details right here:

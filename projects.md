@@ -1,11 +1,11 @@
 ---
 title: Projects
 layout: projects
-intro_image: "images/illustrations/reading.svg"
+intro_image: "images/illustrations/pointing.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Projects that grow with your business
+# My Projects
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+You can find anything from academic projects throughout my studies at EPFL in Lausanne, Switzerland, to some personal projects and creations that I have accumulated over the years. 

@@ -1,5 +1,5 @@
 ---
-title: Jekyll Serif - Jekyll Small Business Theme
+title: Welcome to my Project Page
 layout: default
 bodyClass: page-home
 ---
@@ -25,18 +25,65 @@ bodyClass: page-home
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% for project in site.projects %}
       <div class="col-12 col-md-4 mb-1">
         <div class="project project-summary">
           <div class="project-content">
             <h2 class="project-title">
-              <a href="{{site.baseurl}}{{ project.url }}">{{ project.title }}</a>
+              <a href="/projects/predictive-drone-swarms-with-limited-fov/">Predictive Drone Swarms with Limited Field of View</a>
             </h2>
-            <p>{{ project.content | markdownify | strip_html | truncate: 100 }}</p>
+            <p>A study of the effect of limited field of view on drone swarms using a
+              state of the art predictive trajectory generation and collision avoidance algorithm.</p>
           </div>
         </div>
       </div>
-      {% endfor %}
+
+      <div class="col-12 col-md-4 mb-1">
+        <div class="project project-summary">
+          <div class="project-content">
+            <h2 class="project-title">
+              <a href="/projects/thymio-navigation/">Path Planning and Navigation of Thymio Robots</a>
+            </h2>
+            <p>Implementation of vision, local and global navigation, and filtering on two Thymio robots 
+               allowing them to switch positions following optimal paths.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1">
+        <div class="project project-summary">
+          <div class="project-content">
+            <h2 class="project-title">
+              <a href="/projects/business-advisory/">Rocket Crash:<br> A Nintendo DS Game</a>
+            </h2>
+            <p>I designed and implemented a game on the Nintendo DS microprogrammed embedded system using the C language.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1">
+        <div class="project project-summary">
+          <div class="project-content">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1">
+        <div class="project project-summary">
+          <div class="project-content">
+            <h2 class="project-title">
+              <a> <center>...</center> </a>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-1">
+        <div class="project project-summary">
+          <div class="project-content">
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">

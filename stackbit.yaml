@@ -69,15 +69,15 @@ models:
           - type: string
             name: meta_og_description
             label: meta_og_description
-          - type: string
-            name: meta_twitter_card
-            label: meta_twitter_card
-          - type: string
-            name: meta_twitter_site
-            label: meta_twitter_site
-          - type: string
-            name: meta_twitter_creator
-            label: meta_twitter_creator
+         # - type: string
+         #   name: meta_twitter_card
+         #   label: meta_twitter_card
+         # - type: string
+         #   name: meta_twitter_site
+         #   label: meta_twitter_site
+         # - type: string
+         #   name: meta_twitter_creator
+         #   label: meta_twitter_creator
       - type: object
         name: collections
         fields:
