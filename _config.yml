@@ -11,7 +11,7 @@ logo:
   desktop: "images/logo/logo.svg"
   desktop_height: "36px"
 footer:
-  copyright_text: 'Checkout my GitHub for detailed code <a class="thomaskimble" href="https://github.com/ThomasKimble">www.github.com/ThomasKimble</a>'
+  copyright_text: '© THOMAS KIMBLE 2021'
 
 seo:
   meta_og_title: "Thomas Kimble"

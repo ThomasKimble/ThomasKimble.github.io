@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/css/font-awesome.css' | relative_url }}" rel="stylesheet">
+  <link href="{{ '/assets/css/style-switcher.css' | relative_url }}" rel="stylesheet">
   {% if page.description %}
   <meta name="description" content="{{ page.description }}" />
   {% endif %}
@@ -25,9 +27,11 @@
     {% include header.html headerClass='header-extra' %}
     {{content}}
   </div>
+  {% include style-switcher.html %}
   {% include footer.html %}
   {% include sub-footer.html %}
-  <script type="text/javascript" src="{{ "/assets/js/scripts.js" | relative_url }}""></script>
+  <script type="text/javascript" src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/style-switcher.js" | relative_url }}"></script>
   {% include google-analytics.html %}
 </body>
 </html>

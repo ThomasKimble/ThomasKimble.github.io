@@ -90,7 +90,7 @@
 // Request a theme color level
 @function theme-color-level($color-name: "primary", $level: 0) {
   $color: theme-color($color-name);
-  $color-base: if($level > 0, $black, $white);
+  $color-base: if($level > 0, var(--background), $white);
   $level: abs($level);
 
   @return mix($color-base, $color, $level * $theme-color-interval);

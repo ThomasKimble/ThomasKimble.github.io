@@ -1,9 +1,9 @@
 .feature {
   height: 100%;
-  border: 1px solid $white-offset;
+  border: 1px solid var(--background-offset);
   border-radius: 3px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--background);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -21,9 +21,11 @@
     height: auto;
   }
   .feature-title {
+    color: var(--text-title);
   }
   .feature-content {
     margin-bottom: 0;
     margin-top: auto;
+    color: var(--text-subtitle);
   }
 }

@@ -14,7 +14,7 @@
     }
   }
   .footer-title {
-    color: #ffffff;
+    color: var(--background);
     font-size: 1.3rem;
     font-family: $font-family-heading;
     font-weight: bold;
@@ -28,15 +28,15 @@
     margin: 0;
     padding: 0;
     li {
-      color: $footer-text-color;
+      color: var(--footer-text-color);
       font-size: 1rem;
       a {
-        color: $footer-text-color;
+        color: var(--footer-text-color);
         text-decoration: none;
         padding: 12px 14px 12px 0;
         display: block;
         &:hover {
-          color: darken($footer-text-color, 5%);
+          color: var(--footer-text-color-dark);
           text-decoration: underline;
         }
       }
