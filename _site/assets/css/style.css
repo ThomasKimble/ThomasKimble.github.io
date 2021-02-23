@@ -744,15 +744,13 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .page .wrapper { flex: 1 0 0; }
 
-.header { color: #fdb73e; background-color: var(--background-offset); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--background-line); padding: 10px 0px; }
+.header { position: fixed; top: 0; right: 0; left: 0; z-index: 9999; color: #fdb73e; background-color: var(--background-offset); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--background-line); padding: 10px 0px; }
 
 .header .container { display: flex; justify-content: space-between; align-items: center; }
 
-.header.header-absolute { position: absolute; z-index: 10; width: 100%; }
+.header.header-absolute { position: absolute; z-index: 9999; width: 100%; }
 
 .lock-scroll .header.header-absolute { position: static; }
-
-.header { z-index: 9999; position: -webkit-sticky; position: sticky; top: 0; }
 
 .footer { background: #fdb73e; padding-top: 15px; padding-bottom: 15px; }
 

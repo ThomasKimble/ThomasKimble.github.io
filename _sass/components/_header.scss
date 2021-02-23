@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
   color: $primary;
   background-color: var(--background-offset);
   display: flex;
@@ -14,7 +19,7 @@
   }
   &.header-absolute {
     position: absolute;
-    z-index: 10;
+    z-index: 9999;
     width: 100%;
   }
 }
@@ -24,10 +29,4 @@
       position: static;
     }
   }
-}
-.header {
-  z-index: 9999;
-  position:-webkit-sticky;
-  position:sticky;
-  top:0;
 }

@@ -15,6 +15,9 @@ if (currentTheme == "dark") {
   // ...let's toggle the .light-theme class on the body
   document.body.classList.toggle("light-mode");
   dayNight.querySelector("i").classList.toggle("fa-moon");
+} else {
+  document.body.classList.toggle("light-mode");
+  dayNight.querySelector("i").classList.toggle("fa-moon");
 }
  
 // Listen for a click on the button
