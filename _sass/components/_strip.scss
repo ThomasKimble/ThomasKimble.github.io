@@ -1,6 +1,7 @@
 .strip {
   background: var(--background);
   background-repeat: no-repeat;
+  transition: all 0.2s linear;
 }
 .strip-white {
   background-color: var(--background);

@@ -4,7 +4,7 @@ layout: home
 description: Project Page for Thomas Kimble.
 intro_image: "images/illustrations/desk.svg"
 intro_image_absolute: true
-intro_image_hide_on_mobile: true
+intro_image_hide_on_mobile: false
 ---
 
 # Welcome to my Project Page
