@@ -2,8 +2,11 @@
 const dayNight = document.querySelector(".day-night");
 // Check for dark mode preference at the OS level
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-// Get logo element
-var image = document.getElementById('logo-desktop');
+// Get logo elements
+var desktopLogo = document.getElementById('logo-desktop');
+var mobileLogo = document.getElementById('logo-mobile');
+var githubLogo = document.getElementById('logo-github');
+var linkedinLogo = document.getElementById('logo-linkedin');
  
 // Get the user's theme preference from local storage, if it's available
 const currentTheme = localStorage.getItem("theme");
@@ -41,22 +44,40 @@ dayNight.addEventListener("click", function() {
   }
   // Finally, let's save the current preference to localStorage to keep using it
   localStorage.setItem("theme", theme);
-  
+
   // Load correct image source
   if (document.body.classList.contains("dark-mode")) {
-    image.src = "/images/logo/logo-dark.svg";
+    desktopLogo.src = "/images/logo/logo-dark.svg";
+    mobileLogo.src = "/images/logo/logo-mobile-dark.svg";
+    githubLogo.src = "/images/social/github-dark.svg";
+    linkedinLogo.src = "/images/social/linkedin-dark.svg";
   } else if (document.body.classList.contains("light-mode")) {
-    image.src = "/images/logo/logo.svg";
+    desktopLogo.src = "/images/logo/logo.svg";
+    mobileLogo.src = "/images/logo/logo-mobile.svg";
+    githubLogo.src = "/images/social/github.svg";
+    linkedinLogo.src = "/images/social/linkedin.svg";
   } else {
-    image.src = "/images/logo/logo.svg";
+    desktopLogo.src = "/images/logo/logo.svg";
+    mobileLogo.src = "/images/logo/logo-mobile.svg";
+    githubLogo.src = "/images/social/github.svg";
+    linkedinLogo.src = "/images/social/linkedin.svg";
   }
 });
 
 // Load correct image source
 if (document.body.classList.contains("dark-mode")) {
-  image.src = "/images/logo/logo-dark.svg";
+  desktopLogo.src = "/images/logo/logo-dark.svg";
+  mobileLogo.src = "/images/logo/logo-mobile-dark.svg";
+  githubLogo.src = "/images/social/github-dark.svg";
+  linkedinLogo.src = "/images/social/linkedin-dark.svg";
 } else if (document.body.classList.contains("light-mode")) {
-  image.src = "/images/logo/logo.svg";
+  desktopLogo.src = "/images/logo/logo.svg";
+  mobileLogo.src = "/images/logo/logo-mobile.svg";
+  githubLogo.src = "/images/social/github.svg";
+  linkedinLogo.src = "/images/social/linkedin.svg";
 } else {
-  image.src = "/images/logo/logo.svg";
+  desktopLogo.src = "/images/logo/logo.svg";
+  mobileLogo.src = "/images/logo/logo-mobile.svg";
+  githubLogo.src = "/images/social/github.svg";
+  linkedinLogo.src = "/images/social/linkedin.svg";
 }
