@@ -16,10 +16,11 @@
         font-weight: normal;
         text-decoration: none;
         color: $primary;
+        transition: all 0.2s ease;
         &:hover {
           opacity: 0.6;
           text-decoration: none;
-          transition: all 100ms ease-in 100ms;
+          transition: all 0.2s ease;
         }
       }
       &.active {

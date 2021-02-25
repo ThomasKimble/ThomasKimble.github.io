@@ -35,9 +35,10 @@
         text-decoration: none;
         padding: 12px 14px 12px 0;
         display: block;
+        transition: all 0.2s ease;
         &:hover {
-          color: var(--footer-text-color-dark);
-          text-decoration: underline;
+          opacity: 70%;
+          transition: all 0.2s ease;
         }
       }
     }
