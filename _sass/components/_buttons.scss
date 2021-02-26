@@ -17,8 +17,8 @@
   transition: all 0.2s ease;
   &:hover {
     color: var(--background);
-    transform: scale(1.05) rotate(1.5deg);
-    box-shadow: 0 7px 14px var(--shadow);
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px var(--shadow);
     text-decoration: none;
   }
 }

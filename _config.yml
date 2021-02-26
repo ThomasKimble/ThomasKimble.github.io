@@ -9,8 +9,6 @@ homepage:
 logo:
   mobile: "images/logo/logo-mobile.svg"
   desktop: "images/logo/logo.svg"
-  mobile-dark: "images/logo/logo-mobile-dark.svg"
-  desktop-dark: "images/logo/logo-dark.svg"
   desktop_height: "36px"
 footer:
   copyright_text: '© THOMAS KIMBLE 2021'
@@ -23,7 +21,15 @@ seo:
   meta_og_description: "Thomas Kimble | Project Page"
 
 collections:
-  projects:
+  projects-robotics:
+    output: true
+  projects-space:
+    output: true
+  projects-cs:
+    output: true
+  projects-music:
+    output: true
+  projects-design:
     output: true
 
 sass:

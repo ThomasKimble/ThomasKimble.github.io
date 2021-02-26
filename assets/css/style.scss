@@ -71,12 +71,14 @@ body {
   --text-title: #2f2f41;
   --text-subtitle: #5C5A5A;
   --background: #ffffff;
-  --background-offset: #f7f7ff;
+  --background-offset: #F2F2FA;
   --background-line: #f2f2f2;
   --sub-footer-text-color: #ffffff;
   --footer-text-color: #ffffff;
   --footer-text-color-dark: #f7f7ff;
   --shadow: rgba(50, 50, 93, 0.8);
+  --main-menu-text: #ffffff;
+  --main-menu-background: #fdb73e;
 }
 
 body.dark-mode {
@@ -96,4 +98,6 @@ body.dark-mode {
   --footer-text-color: #2f2f41;
   --footer-text-color-dark: #000000;
   --shadow: #09091B;
+  --main-menu-text: #fdb73e;
+  --main-menu-background: #2f2f41;
 }

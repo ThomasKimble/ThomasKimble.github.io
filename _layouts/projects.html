@@ -18,22 +18,20 @@ bodyClass: page-projects-list
   </div>
 </div>
 
-<div class="strip strip-grey">
-
-  <div class="container pt-6">
+<div class="strip">
+  <div class="container pt-1">
     <div class="row justify-content-center">
       <div class="col-12 col-md-6 col-lg-12 mb-2">
-        <div class="feature">
+        <div class="feature-projects">
           <div class="feature-image"><img alt="Robotics logo" src="/images/features/robotics.png" /></div>
           <h2 class="feature-title">Robotics</h2>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="container pt-6 pb-6">
+  <div class="container pt-2 pb-6">
     <div class="row">
-      {% for project in site.projects %}
+      {% for project in site.projects-robotics %}
       <div class="col-12 col-md-6 mb-3">
         <div class="project project-summary">
           <div class="project-content">
@@ -47,25 +45,22 @@ bodyClass: page-projects-list
       {% endfor %}
     </div>
   </div>
-
 </div>
 
 <div class="strip">
-
-  <div class="container pt-6">
+  <div class="container pt-1">
     <div class="row justify-content-center">
       <div class="col-12 col-md-6 col-lg-12 mb-2">
-        <div class="feature-grey">
+        <div class="feature-projects">
           <div class="feature-image"><img alt="Space logo" src="/images/features/space.png" /></div>
-          <h2 class="feature-title">Space Technologies</h2>
+          <h2 class="feature-title">Space Tehcnologies</h2>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="container pt-6 pb-6">
+  <div class="container pt-2 pb-6">
     <div class="row">
-      {% for project in site.projects %}
+      {% for project in site.projects-space %}
       <div class="col-12 col-md-6 mb-3">
         <div class="project project-summary">
           <div class="project-content">
@@ -79,5 +74,91 @@ bodyClass: page-projects-list
       {% endfor %}
     </div>
   </div>
+</div>
 
+<div class="strip">
+  <div class="container pt-1">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-12 mb-2">
+        <div class="feature-projects">
+          <div class="feature-image"><img alt="Space logo" src="/images/features/computer_science.png" /></div>
+          <h2 class="feature-title">Computer Science</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-2 pb-6">
+    <div class="row">
+      {% for project in site.projects-cs %}
+      <div class="col-12 col-md-6 mb-3">
+        <div class="project project-summary">
+          <div class="project-content">
+            <h2 class="project-title">
+              <a href="{{site.baseurl}}{{ project.url }}">{{ project.title }}</a>
+            </h2>
+            <p>{{ project.content | markdownify | strip_html | truncate: 100 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="container pt-1">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-12 mb-2">
+        <div class="feature-projects">
+          <div class="feature-image"><img alt="Space logo" src="/images/features/music.png" /></div>
+          <h2 class="feature-title">Music</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-2 pb-6">
+    <div class="row">
+      {% for project in site.projects-music %}
+      <div class="col-12 col-md-6 mb-3">
+        <div class="project project-summary">
+          <div class="project-content">
+            <h2 class="project-title">
+              <a href="{{site.baseurl}}{{ project.url }}">{{ project.title }}</a>
+            </h2>
+            <p>{{ project.content | markdownify | strip_html | truncate: 100 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="container pt-1">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-12 mb-2">
+        <div class="feature-projects">
+          <div class="feature-image"><img alt="Space logo" src="/images/features/design.png" /></div>
+          <h2 class="feature-title">Design</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-2 pb-6">
+    <div class="row">
+      {% for project in site.projects-design %}
+      <div class="col-12 col-md-6 mb-3">
+        <div class="project project-summary">
+          <div class="project-content">
+            <h2 class="project-title">
+              <a href="{{site.baseurl}}{{ project.url }}">{{ project.title }}</a>
+            </h2>
+            <p>{{ project.content | markdownify | strip_html | truncate: 100 }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>

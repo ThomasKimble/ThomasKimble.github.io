@@ -1,19 +1,19 @@
 .feature {
   height: 100%;
-  border: 1px solid var(--background-offset);
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 20px;
   background-color: var(--background);
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  transition: all 0.2s ease;
   .feature-image {
     flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
   }
   img {
@@ -28,23 +28,27 @@
     margin-top: auto;
     color: var(--text-subtitle);
   }
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 10px var(--shadow);
+  }
 }
-.feature-grey {
+
+.feature-projects {
   height: 100%;
-  border: 1px solid var(--background);
-  border-radius: 3px;
-  padding: 20px;
+  padding: 10px;
   background-color: var(--background-offset);
+  border-radius: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
   .feature-image {
     flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
   }
   img {

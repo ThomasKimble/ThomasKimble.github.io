@@ -3,7 +3,7 @@
   top:0;
   right: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 40;
   color: $primary;
   background-color: var(--background-offset);
   display: flex;
@@ -19,7 +19,7 @@
   }
   &.header-absolute {
     position: absolute;
-    z-index: 9999;
+    z-index: 40;
     width: 100%;
   }
 }
