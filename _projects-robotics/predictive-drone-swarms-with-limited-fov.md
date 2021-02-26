@@ -10,8 +10,8 @@ A study of the effect of **limited field of view** on drone swarms using a state
 
 * <span style="color:#fdb73e">**Date:**</span> 15.01.2021
 * <span style="color:#fdb73e">**Author:**</span> Thomas Kimble
-* <span style="color:#fdb73e">**Context:**</span> EPFL Ma-3 Semester Project
 * <span style="color:#fdb73e">**Field of Study:**</span> Aerial Robotics
+* <span style="color:#fdb73e">**Context:**</span> EPFL Ma-3 Semester Project
 
 
 ![Swarm](/images/project-images/swarm.png)
