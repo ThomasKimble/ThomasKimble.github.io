@@ -29,7 +29,7 @@ Foursquare is a location-based social network which database gathers 13+ billion
 
 # Initial Analysis
 
-First, let's talk about our data. As previously mentionned, we are using data from *Foursquare* which includes long-term global-scale check-in
+First, let's talk about our data. As previously mentioned, we are using data from *Foursquare* which includes long-term global-scale check-in
 data collected from Foursquare (about 22 months from April 2012 to January 2014), and also two snapshots of user
 social networks before and after the check-in data collection period. After preprocessing, the check-in dataset contains
 19,306,111 checkins by 71,188 users in 3,430,171 venues. The social network data contains 363,704 old and 607,333 new friendships.
@@ -66,30 +66,59 @@ Clearly the users love to eat!
 To create our prediction model, we need to give each check-in a certain *Checkin Social Score*: we want to know how social a check-in is!
 Indeed giving a social score to the 3,430,171 different venues is hard work. Giving a social score to the 506 unique proposed categories is slightly easier, but also
 not the best idea. Remember the Foursquare hierarchy? We can use the level 1 category to group all checkins into one of 275 categories now.
-Our social score is based on two main ideas, first of all that some places are less social than others, obviously a post office is less social than a nighclub. We
+Our social score is based on two main ideas, first of all that some places are less social than others, obviously a post office is less social than a nightclub. We
 define a coefficient **C** for each level 0 category, reflecting how social this category is (in general).
 
 |       Level 0 category      | Coefficient |
 |:---------------------------:|:-----------:|
 |        Nightlife Spot       |     1.5     |
-| Proffesional & Other Places |     1.1     |
+| Professional & Other Places |     1.1     |
 |     College & University    |     1.3     |
 |             Food            |     1.3     |
 |        Shop & Service       |     1.0     |
 |      Travel & Transport     |     1.2     |
 |          Residence          |     1.1     |
 |    Outdoors & Recreation    |     1.4     |
-|     Arts % Entertainment    |     1.3     |
+|     Arts & Entertainment    |     1.3     |
 |            Event            |     1.5     |
 |            Other            |     1.0     |
 
-Second of all, we want to know if a check-in was performed during the peak hours of the venue category. For this we use level 1 categories to be slightly more precise in our categorisation. If a check-in is within the venue's peak hours, we give it a score of **S_peak = 2**, if it is'nt we give it **S_peak = 1**. Each check-in can now get a social score by multiplying the coefficient with the peak hour score: **S = C*S_peak**.
+Second of all, we want to know if a check-in was performed during the peak hours of the venue category. For this we use level 1 categories to be slightly more precise in our categorisation. If a check-in is within the venue's peak hours, we give it a score of **S_peak = 2**, if it isn't we give it **S_peak = 1**. Each check-in can now get a social score by multiplying the coefficient with the peak hour score: **S = C*S_peak**.
 
 Right, we have now given the check-ins social scores but not the users. We therefore give each user an individual social score that is equals to the mean value of **S** for each of their check-ins.
 
 But we're not done here... We also give each user two travel scores! We want to see if mobility influences friendships, therefore we can't leave out travelling.
-First we notice that our friends at Foursquare have given us a level 0 category named *Travel & Transport*, our first travel score **T_category** is defined as the fraction of check-ins within this category over the total number of check-ins. Our second travel score **T_distance** uses a more scientific approach. By looking at the distribution of check-in distances from home. We see that the distribution follows a power law with a dip between 70 and 200km from home. We therefore use the upper value of 200km to define whether a check-in should be considered a *Travel* or not. We define **T_distance** as the fraction of *Travel* check-ins (further than 200km from home) over the total numver of check-ins.
+First we notice that our friends at Foursquare have given us a level 0 category named *Travel & Transport*, our first travel score **T_category** is defined as the fraction of check-ins within this category over the total number of check-ins. Our second travel score **T_distance** uses a more scientific approach. By looking at the distribution of check-in distances from home. We see that the distribution follows a power law with a dip between 70 and 200km from home. We therefore use the upper value of 200km to define whether a check-in should be considered a *Travel* or not. We define **T_distance** as the fraction of *Travel* check-ins (further than 200km from home) over the total number of check-ins.
 
 The figure below shows three user's with a high **T_distance** score in orange, and a low **T_distance** in purple. We can clearly see that our definition illustrates how far and how often a user with a high **T_distance** travels.
 
 {% include project_data/friendship/travel_plot.html %}
+
+# Prediction Models
+
+We will try two methods in order to predict the number of friends that a specific user will gain or lose during the data collection period:
+1. A model using the social scores and the travel scores that we have computed above  
+2. A model only using the check-ins of the users to determine the similarity between them
+
+First of all we divide our data into a training set containing 80% of the users (45618 users), and a testing set containing 20% of the users (11405 users).  
+We then train our models on the training data, and predict the number of friends gained for the users in the testing set.
+
+Let's talk about the first model. After having computed social and traveler scores for every user in our training set, we normalise the scores and we use them to train a **linear regression model**. We then use this model to predict the number of friends gained for each user in the testing set, and we compare that value to the real number of friends gained. The figure below is a plot of the residual, or the subtraction of the predicted friendship gain and the true friendship gain.
+
+{% include project_data/friendship/regression_model.html %}
+
+We can see that with this simple regression model, the results already look pretty promising! In fact **in 35% of the cases, we were able to determine with an error of less than 1 friends, the number of friends that a user has gained or lost**.
+
+Now what if we only use the the check-ins of the users in the testing set to determine to which user in the training set they are the most similar to?
+
+For the second model, we use a similarity measurement technique between the users and then use this to predict how a user's friendships have evolved.  In this case, for each user in the testing set, we determine the 5 most similar users in the training set by using **cosine similarity**, taking only into account the frequency at which the users go to a specific location. With this information, we then determine which users are the most similar. The difference between the predicted number of friends and the real number of friends (aka the residual) can be seen in the density plot below.
+
+{% include project_data/friendship/cosine_model.html %}
+
+Clearly, this method works a lot better than the model using the social and traveler scores of the users, which is something we were not expecting at all! In **60% of the cases, we are able to predict the number of friends a person will make (with an error of only 1 friend)** simply by looking at the users to which this person is most similar. This clearly proves that users that go to similar places are similar in behaviour, thus making the same number of friends.
+
+# Conclusion
+
+The main result of our analysis is that it is obviously difficult to make precise predictions on the evolution of friendships id users have a few friends on the social media. Indeed, little variations can have a higher impact on our model and affect its performances.
+
+Nevertheless, we were able to predict the future number of friends of each user with acceptable trust ranges. The model of cosine similarity achieved 60% of accuracy while the other model did not exceed 35% of accuracy with an error of one friend.

@@ -1,52 +1,43 @@
 ---
-title: 'About'
-date: 2018-02-22T17:01:34+07:00
+title: 'About Me'
+date: 2021-02-27T17:01:34+01:00
 layout: page
 bodyClass: page-about
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
+My name is **Thomas Oliver Kimble** and I am an engineer with a passion for music.
 
-## Ne verba patulosque numen vix libet
+<p align="left">
+  <img
+    src="/images/about/me.jpg"
+    alt="Me"
+    width="60%"
+  />
+</p>
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+# Personal life
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
+I was born in England and moved to Switzerland when I was 3 years old. I then moved to France at 5,
+but continued my education in Switzerland.
 
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
+Maths and Science have always intrigued me, so becoming an engineer was a natural decision as I have always
+been fascinated as to how things work. I also have an eye for design and aesthetics, allowing me to show
+a more creative side in contrast with my studies.
 
-## Postquam tamen
+There has always a guitar around me and I started playing at 7 years old. I have played in multiple bands,
+and performed at festivals, in bars, outdoors, indoors... you name it! Curiosity lead me to also pick up
+other instruments such as the drums and the piano over the years, allowing me to compose songs myself.
 
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
+# Education
 
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
+After graduating secondary school with a French Baccalauréat with a scientific orientation in 2015,
+I obtained a Bachelor's Degree in Microengineering in 2019, and am currently finishing my Master's
+degree in Robotics at <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a> in Lausanne, Switzerland.
 
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
+Microengineering at EPFL allowed me to develop skills in a lot of domains such as electrical engineering,
+mechanical design, structural engineering, micro/nano-tech, software engineering and robotics. It was during my final
+year that I developed a keen interest in robotics oriented software engineering, hence pursuing a Master's degree in the domain.
 
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+# Resume
+
+Please find my Resume/CV <a href="/Thomas_Kimble_Resume.pdf" target="_blank">here</a>.

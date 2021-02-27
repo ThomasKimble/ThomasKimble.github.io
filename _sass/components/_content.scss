@@ -2,7 +2,10 @@
   background-color: var(--background);
   a {
     text-decoration: none;
-    color: var(--text-subtitle);
+    color: $primary;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   img {
     max-width: 100%;
@@ -12,7 +15,7 @@
   }
   strong {
     font-width: bold;
-    color: var(--text-subtitle);
+    color: var(--text-title);
   }
   em {
     font-style: italic;

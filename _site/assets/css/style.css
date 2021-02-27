@@ -895,11 +895,13 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .content { background-color: var(--background); }
 
-.content a { text-decoration: none; color: var(--text-subtitle); }
+.content a { text-decoration: none; color: #fdb73e; }
+
+.content a:hover { text-decoration: underline; }
 
 .content img { max-width: 100%; height: auto; margin-top: 20px; margin-bottom: 20px; }
 
-.content strong { font-width: bold; color: var(--text-subtitle); }
+.content strong { font-width: bold; color: var(--text-title); }
 
 .content em { font-style: italic; color: var(--text-subtitle); }
 
