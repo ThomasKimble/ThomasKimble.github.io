@@ -1,0 +1,34 @@
+I"`
+<p>A study of the effect of <strong>limited field of view</strong> on drone swarms using a state of the art <strong>predictive</strong> trajectory generation and collision avoidance algorithm.</p>
+
+<ul>
+  <li><span style="color:#fdb73e"><strong>Date:</strong></span> 15.01.2021</li>
+  <li><span style="color:#fdb73e"><strong>Author:</strong></span> Thomas Kimble</li>
+  <li><span style="color:#fdb73e"><strong>Field of Study:</strong></span> Aerial Robotics</li>
+  <li><span style="color:#fdb73e"><strong>Context:</strong></span> EPFL Ma-3 Semester Project</li>
+</ul>
+
+<p><img src="/images/project-images/swarm/swarm_intro.png" alt="Swarm" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Some robotics tasks such as manufacturing, surveillance, or search and rescue require the use of multiple agents to be accomplished. Indeed some objectives would be too time consuming or even impossible to complete if left to a single robot. Cooperation is key in the success of multi-agent tasks.</p>
+
+<p>Coordination and cooperation are facilitated with a centralised approach with all agents sharing common information, but real life circumstances do not always allow for this. Therefore another way to approach the problem is by using distributed systems, where each agent is self-contained in its decision making as well as its sensing.</p>
+
+<p>One standing issue with multi-agent robotics task is how to safely navigate an environment. Many algorithms mitigate certain real world constraints, and assume that each agent is able to sense every other neighbouring agent. Indeed most sensors are limited, thus adding concept of a limited field of view.</p>
+
+<p>This was a semester project that I did during the final semester of my Master’s degree at the Laboratory of Intelligent Systems at EPFL, lausanne. I studied the effect of a limited field of view as it was introduced to a predictive model, combining state of the art collision avoidance algorithms with real world constraints such as the limited field of view found in off the shelf sensors.</p>
+
+<h1 id="results">Results</h1>
+
+<div class="row">
+  <div class="row">
+    <img src="/images/project-images/swarm/swarm_goal_3.png" alt="Goal3" style="width:33.33%" />
+    <img src="/images/project-images/swarm/swarm_goal_6.png" alt="Goal6" style="width:33.33%" />
+    <img src="/images/project-images/swarm/swarm_goal_9.png" alt="Goal9" style="width:33.33%" />
+  </div>
+</div>
+
+<p>For more details, please find more detailed writtern report <a href="/project_data/swarm/swarm_report.pdf">here</a>. Unfortunately I can not share the code for this project due a confidentiality and non-use agreement.</p>
+:ET

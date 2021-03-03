@@ -14,7 +14,7 @@ A study of the effect of **limited field of view** on drone swarms using a state
 * <span style="color:#fdb73e">**Context:**</span> EPFL Ma-3 Semester Project
 
 
-![Swarm](/images/project-images/swarm.png)
+![Swarm](/images/project-images/swarm/swarm_intro.png)
 
 # Introduction
 
@@ -24,10 +24,12 @@ Coordination and cooperation are facilitated with a centralised approach with al
 
 One standing issue with multi-agent robotics task is how to safely navigate an environment. Many algorithms mitigate certain real world constraints, and assume that each agent is able to sense every other neighbouring agent. Indeed most sensors are limited, thus adding concept of a limited field of view.
 
-This was a semester project that I did during the final semester of my Master's degree at the Laboratory of Intelligent Systems at EPFL, lausanne. I studied the effect of a limited field of view as it was introduced to a predictive model, combining state of the art collision avoidance algorithms with real world constraints such as the limited field of view found in off the shelf sensors.
+This was a semester project that I did during the final semester of my Master's degree at the Laboratory of Intelligent Systems at EPFL, Lausanne. I studied the effect of a limited field of view as it was introduced to a predictive model, combining state of the art collision avoidance algorithms with real world constraints such as the limited field of view found in off the shelf sensors.
 
 # Results
 
 
+{% include project_data/swarm/results.html %}
 
-For more details, please find more detailed writtern report [here](/project_data/swarm/swarm_report.pdf). Unfortunately I can not share the code for this project due a confidentiality and non-use agreement.
+
+For more details, please find more detailed written report <a href="/images/project-images/swarm/swarm_report.pdf" target="_blank">here</a>. Unfortunately I can not share the code for this project due a confidentiality and non-use agreement.

@@ -21,6 +21,8 @@ seo:
   meta_og_description: "Thomas Kimble | Project Page"
 
 collections:
+  projects:
+    output: true
   projects-robotics:
     output: true
   projects-space:
