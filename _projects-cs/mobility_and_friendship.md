@@ -13,18 +13,14 @@ A study of the effect of **Mobility** on **Friendship** using a different models
 * <span style="color:#fdb73e">**Field of Study:**</span> Applied Data Analysis
 * <span style="color:#fdb73e">**Context:**</span> EPFL Ma-3 Project
 
-
 # Introduction
-
-In 2020, zenith year for social media, the WorldWideWeb proliferates with celebrities and influencers, showing off their incredible life online and seeking for followers as much as forty-niners were looking for nuggets during the California Gold Rush. Many of the social media users have used an analytical app at least once to manage their virtual activity and visualise statistics about their posts and friends. One in particular can end friendships: indeed these apps can indicate which of your online friends has deleted you from their friend's list, or even unfollowed you. It is heartbreaking to discover that one of your close friends thought that you were not worth following anymore, and decided to cancel your virtual friendship.
-
 
 It is almost impossible to precisely forecast the creation and deletion of particular social media friendships. Indeed it depends on too many real-life factors, including who you speak too, and who you meet, even randomly in a connection-free area. These factors making it difficult to use geo-localisation as friendship prediction tools. Nevertheless we believe that with the appropriate dataset, it must be possible to predict (or get close to) if a user will make or break friendships over a certain period.
 
 Throughout this study, we used data from the social network *Foursquare* to build and train two different prediction models in order to determine whether friendships will be created or deleted a 22 month time period.
 
 
-Foursquare is a location-based social network which database gathers 13+ billion check-ins, used by developers around the globe for localisation purposes. A **check-in** occurs when a user communicates their position, associated with a location category like a bakery, shops, boats, clubs, etc. We extracted a fraction of this database used in several papers exploring multiple aspects of friendship and mobility, and we will base our analysis on this dataset.
+Foursquare is a location-based social network which database gathers 13+ billion check-ins, used by developers around the globe for localisation purposes. A check-in occurs when a user communicates their position, associated with a location category like a bakery, shops, boats, clubs, etc. We extracted a fraction of this database used in several papers exploring multiple aspects of friendship and mobility, and we will base our analysis on this dataset.
 
 
 # Initial Analysis
@@ -107,7 +103,7 @@ Let's talk about the first model. After having computed social and traveler scor
 
 {% include project_data/friendship/regression_model.html %}
 
-We can see that with this simple regression model, the results already look pretty promising! In fact **in 35% of the cases, we were able to determine with an error of less than 1 friends, the number of friends that a user has gained or lost**.
+We can see that with this simple regression model, the results already look pretty promising! In fact **in 25% of the cases, we were able to determine the number of friends that a user had gained or lost**. We also get a prediction accuracy of **46%** with an error of one friend, and **54%** for an error of two friends.
 
 Now what if we only use the the check-ins of the users in the testing set to determine to which user in the training set they are the most similar to?
 
@@ -115,10 +111,15 @@ For the second model, we use a similarity measurement technique between the user
 
 {% include project_data/friendship/cosine_model.html %}
 
-Clearly, this method works a lot better than the model using the social and traveler scores of the users, which is something we were not expecting at all! In **60% of the cases, we are able to predict the number of friends a person will make (with an error of only 1 friend)** simply by looking at the users to which this person is most similar. This clearly proves that users that go to similar places are similar in behaviour, thus making the same number of friends.
+Clearly, this method works a lot better than the model using the social and traveler scores of the users, which is something we were not expecting at all! In **35% of the cases, we are able to predict the exact number of friends a person will make** simply by looking at the users to which this person is most similar. If we consider an of error of a single friend we get an prediction accuracy of **71%**, and **85%** for an error of two friends. This clearly proves that users that go to similar places are similar in behaviour, thus making the same number of friends.
 
 # Conclusion
 
 The main result of our analysis is that it is obviously difficult to make precise predictions on the evolution of friendships id users have a few friends on the social media. Indeed, little variations can have a higher impact on our model and affect its performances.
 
-Nevertheless, we were able to predict the future number of friends of each user with acceptable trust ranges. The model of cosine similarity achieved 60% of accuracy while the other model did not exceed 35% of accuracy with an error of one friend.
+Nevertheless, we were able to predict the future number of friends of each user with acceptable trust ranges. The model of cosine similarity achieved up to **71%** accuracy while the other model did not exceed **46%** of accuracy with an error of one friend.
+
+# Video
+
+<video style="width:100%;" src="/images/project-images/friendship/friendship_pitch.mp4" controls>
+</video>
