@@ -1,7 +1,8 @@
 // Select the button
 const dayNight = document.querySelector(".day-night");
-// Check for dark mode preference at the OS level
+// Check for dark or light mode preference at the OS level
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)");
 // Get logo elements
 var desktopLogo = document.getElementById('logo-desktop');
 var mobileLogo = document.getElementById('logo-mobile');
@@ -11,18 +12,18 @@ var linkedinLogo = document.getElementById('logo-linkedin');
 // Get the user's theme preference from local storage, if it's available
 const currentTheme = localStorage.getItem("theme");
 // If the user's preference in localStorage is dark...
-if (currentTheme == "dark") {
+if (currentTheme == "dark" || prefersDarkScheme.matches) {
   // ...let's toggle the .dark-theme class on the body
   document.body.classList.toggle("dark-mode");
   dayNight.querySelector("i").classList.toggle("fa-sun");
 // Otherwise, if the user's preference in localStorage is light...
-} else if (currentTheme == "light") {
+} else if (currentTheme == "light" || prefersLightScheme.matches) {
   // ...let's toggle the .light-theme class on the body
   document.body.classList.toggle("light-mode");
   dayNight.querySelector("i").classList.toggle("fa-moon");
-} else {
-  document.body.classList.toggle("light-mode");
-  dayNight.querySelector("i").classList.toggle("fa-moon");
+}  else {
+  document.body.classList.toggle("dark-mode");
+  dayNight.querySelector("i").classList.toggle("fa-sun");
 }
  
 // Listen for a click on the button
