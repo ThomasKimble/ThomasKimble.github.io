@@ -6,21 +6,25 @@
 .intro-image-absolute {
   max-width: none;
   padding: 0;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  margin-top: -20px;
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
+    width: 80%;
+    margin-left: 65px;
   }
   @include media-breakpoint-up(lg) {
+    margin-left: 0px;
     position: absolute;
     bottom: 30px;
-    left: -60px;
-    width: 600px;
+    left: 0px;
+    width: 480px;
   }
   @include media-breakpoint-up(xl) {
-    bottom: -10px;
-    left: -70px;
-    width: 720px;
+    bottom: -20px;
+    left: 0px;
+    width: 570px;
   }
 }
 .intro-image-hide-mobile {
@@ -33,10 +37,10 @@
 .intro-image-absolute-project {
   width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 0px;
   max-width: none;
   padding: 0;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   @include media-breakpoint-up(sm) {
   }
   @include media-breakpoint-up(md) {
@@ -46,12 +50,12 @@
   @include media-breakpoint-up(lg) {
     margin-left: 0px;
     position: absolute;
-    bottom: -50px;
+    bottom: -70px;
     left: 0px;
     width: 450px;
   }
   @include media-breakpoint-up(xl) {
-    bottom: -100px;
+    bottom: -120px;
     left: 0px;
     width: 550px;
   }
