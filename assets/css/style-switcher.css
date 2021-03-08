@@ -25,16 +25,8 @@
   transition: all 0.3s ease;
 }
 
-.style-switcher .style-toggler{
-  top: 35px;
-}
-
 .style-switcher .day-night{
   top: 0px;
-}
-
-.fa-palette {
-  color: #fdb73e;
 }
 
 .fa-moon {

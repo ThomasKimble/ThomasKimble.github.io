@@ -7,8 +7,8 @@ google_analytics_id: ""
 homepage:
   show_call_box: true
 logo:
-  mobile: "images/logo/logo-mobile.svg"
-  desktop: "images/logo/logo.svg"
+  mobile: "images/logo/logo-mobile-dark.svg"
+  desktop: "images/logo/logo-dark.svg"
   desktop_height: "36px"
 footer:
   copyright_text: '© THOMAS KIMBLE 2021'
