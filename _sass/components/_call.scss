@@ -42,6 +42,9 @@
   .call-email {
     a {
       color: var(--text-subtitle);
+      &:hover {
+        color: $primary;
+      }
     }
   }
   strong {

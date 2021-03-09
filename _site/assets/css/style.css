@@ -788,7 +788,7 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .sub-footer .social a:first-of-type { margin-left: -10px; transition: all 0.2s ease; }
 
-.logo { display: none; }
+.logo { display: none; transition: all 0.2s ease; }
 
 @media (min-width: 576px) { .logo { display: block; } }
 
@@ -796,13 +796,17 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .logo a { display: block; width: 100%; height: 100%; }
 
-.logo-mobile { display: block; width: 40px; padding: 10px 0 10px 0; }
+.logo:hover { transform: scale(1.05); }
+
+.logo-mobile { transition: all 0.2s ease; display: block; width: 40px; padding: 10px 0 10px 0; }
 
 @media (min-width: 576px) { .logo-mobile { display: none; } }
 
 .logo-mobile img { width: 100%; height: auto; }
 
 .logo-mobile a { display: block; width: 100%; height: 100%; }
+
+.logo-mobile:hover { transform: scale(1.1); }
 
 .main-menu { display: none; }
 
@@ -882,6 +886,8 @@ ul li, ol li { padding: 0; margin: 0; }
 .call .call-phone { margin-bottom: 5px; color: var(--text-subtitle); }
 
 .call .call-email a { color: var(--text-subtitle); }
+
+.call .call-email a:hover { color: #fdb73e; }
 
 .call strong { font-weight: bold; color: var(--text-title); }
 
