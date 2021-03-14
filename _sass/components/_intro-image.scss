@@ -4,6 +4,7 @@
   margin-top: 30px;
 }
 .intro-image-absolute {
+  transition: all 0.2s ease;
   max-width: none;
   padding: 0;
   margin-bottom: 20px;
@@ -26,6 +27,9 @@
     left: 0px;
     width: 570px;
   }
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 .intro-image-hide-mobile {
   display: none;
@@ -35,6 +39,7 @@
 }
 
 .intro-image-absolute-project {
+  transition: all 0.2s ease;
   width: 100%;
   height: auto;
   margin-top: 0px;
@@ -58,5 +63,8 @@
     bottom: -120px;
     left: 0px;
     width: 550px;
+  }
+  &:hover {
+    transform: scale(1.02);
   }
 }

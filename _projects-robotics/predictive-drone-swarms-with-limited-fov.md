@@ -49,15 +49,11 @@ switched. This means that if an agent starts on the *x = 2.5m* axis, it will fin
 the *x = −2.5m* axis, giving us all of the end positions *p<sub>end,i</sub>*. All agents are initialised at l
 east *d = 0.3m* apart thus avoiding collisions at initialisation..
 
-# Results
-
-Here we can see three examples with N=3, 6 and 9 agents, with the following parameters:
+Here we can see three examples if collision free trajectories with N=3, 6 and 9 agents, with the following parameters:
 
 * **Initialisation method**: most
 * **FOV width angle**: α=60°
 * **FOV height angle**: β=45°
-
-Collision free trajectories were generated in each of the three examples,
 
 <div class="container">
   <div class="column justify-content-start">
@@ -73,7 +69,65 @@ Collision free trajectories were generated in each of the three examples,
   </div>
 </div>
 
+
+# Results
+
+The figure below shows the average number of collisions using different FOV width and height
+angles α and β over 5 experiments for each parameter combination.
+
+By comparing rows we can clearly see that the models performance is the poorest with the *Goal* initialisation method, followed by *Closest*, and the best performing is
+*Most*.
+
 {% include project_data/swarm/results.html %}
+
+**Goal:**
+
+For each number of agents, we can see a trend where higher FOV angles induce fewer collisions. We specifically notice that the height angle β has more effect on the number of collisions compared to the width angle α.
+
+With N = 3 we can see that the maximal average amount of collisions reported is 1 with the lowest width and height angles both at 15°. The best performance for three agents is with β ≥ 60° and α ≥ 105°.
+
+With N = 6 the results shows the same trends but with performance with width angles lower than β = 105° being very low, showing more collisions. The highest
+number of collisions happens with β ≤ 45° where the number reaches an average of 3.4 collisions.
+
+We see very poor performances for N = 9 agents, with the same trends in angles as previously, but this time reaching up to an average of 8.6 collisions.
+
+
+**Closest:**
+
+We see a similar trend as with the Goal heading initialisation method, however with more variability in the number of collisions with different angles. Lower angles in both width and height lead to more collisions, however here we see that in general lower width angles α lead to more collisions than lower height angles β.
+
+For N = 3 agents, the results show good performances for angles higher than 15°, with a maximum average of 0.2 collisions for all angles above this value.
+
+We can see that the highest number of collisions occurs with α = β = 15° with on average 2 collisions for N = 6 agents. Best performances here are for high
+angles above 120° in both width and height.
+
+For N = 9 agents collisions have an average above 0.4 collisions across all angles. The maximal values are for α = 15° with up to 3.8 average collisions.
+
+**Most:**
+
+This heading initialisation method shows to be the most promising with slightly more collisions on average at lower width and height angles, but with a general better performance than the other methods.
+
+We can see with N = 3 agents that the model performs well overall, with slightly more collisions with α = 15° and β ≤ 30°. However the maximal average collision is 0.4 which is lower than the other two methods for N = 3.
+
+For N = 6, results show that medium to width angles α ≥ 45° and height angles β > 75° show very good results with a maximal average of 0.4 collisions only in two cases. For other angles, we can see that lower height angles β seem to lead to a higher number of collisions with a value of up to 2.4 average.
+
+Finally for N = 9 agents good performances are seen for α ≥ 60° and β ≥ 90°. Below these angles we can get up to an average of 3.8 collisions for α = β = 45° for example.
+
+# Discussion
+
+Surprisingly, the different initialisation methods had a larger impact on the number of collisions than expected. With N = 9 agents, maximal average collisions varied from
+3.4 to 8.6 when using different methods. The *Closest* method outperformed the other two methods in maximal average number of collisions, and by minimal FOV angle values with less than 1 collision on average. We find good performance with this method and FOV angles α ≥ 60° and β ≥ 90°.
+
+When using the *Goal* method, agents generally start off the simulation with no others in their FOV, therefore leading to minimal heading corrections and imminent
+collisions that are only seen a moment before impact, and can not be avoided.
+
+When using the *Closest* method, agents usually keep one other agent in their FOV, and as the closest agent is generally travelling in the same direction as itself, there is a low chance of trajectories coinciding and collisions happen with agents coming from further away. This method would perhaps work better if all agents within the swarm were heading in the same direction, but this hypothesis would need to be put to the test.
+
+When using the *Most* method, by definition the agents were headed towards the maximal amount of others possible, therefore have more opportunities to correct their trajectory leading to less collisions. Indeed it is intuitive that an agent that can see more, can react accordingly.
+
+If we focus more on the FOV results, independent of the initialisation mode we can see that in general a higher height angle β is required for fewer collisions when
+compared to the width angle α. This is due to the fact that the implementation of our model corrects the heading around the z-axis (yaw) and does not allow the heading
+and FOV to rotate up and down (pitch and roll). This leads to lower width angles α performing better than lower height angles β. Indeed in many cases, agents would avoid others trajectories by flying under or over, therefore not seeing other agents from beneath or from above, leading to collisions
 
 # Conclusion
 

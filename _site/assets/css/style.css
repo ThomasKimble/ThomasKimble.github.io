@@ -959,7 +959,7 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .intro-image { width: 100%; height: auto; margin-top: 30px; }
 
-.intro-image-absolute { max-width: none; padding: 0; margin-bottom: 20px; margin-top: -20px; }
+.intro-image-absolute { transition: all 0.2s ease; max-width: none; padding: 0; margin-bottom: 20px; margin-top: -20px; }
 
 @media (min-width: 768px) { .intro-image-absolute { width: 80%; margin-left: 65px; } }
 
@@ -967,17 +967,21 @@ ul li, ol li { padding: 0; margin: 0; }
 
 @media (min-width: 1300px) { .intro-image-absolute { bottom: -20px; left: 0px; width: 570px; } }
 
+.intro-image-absolute:hover { transform: scale(1.02); }
+
 .intro-image-hide-mobile { display: none; }
 
 @media (min-width: 768px) { .intro-image-hide-mobile { display: block; } }
 
-.intro-image-absolute-project { width: 100%; height: auto; margin-top: 0px; max-width: none; padding: 0; margin-bottom: 20px; }
+.intro-image-absolute-project { transition: all 0.2s ease; width: 100%; height: auto; margin-top: 0px; max-width: none; padding: 0; margin-bottom: 20px; }
 
 @media (min-width: 768px) { .intro-image-absolute-project { width: 75%; margin-left: 65px; } }
 
 @media (min-width: 992px) { .intro-image-absolute-project { margin-left: 0px; position: absolute; bottom: -70px; left: 0px; width: 450px; } }
 
 @media (min-width: 1300px) { .intro-image-absolute-project { bottom: -120px; left: 0px; width: 550px; } }
+
+.intro-image-absolute-project:hover { transform: scale(1.02); }
 
 .strip { background: var(--background); background-repeat: no-repeat; }
 
