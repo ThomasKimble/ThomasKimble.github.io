@@ -1055,4 +1055,6 @@ body.light-mode { --text-title: #2f2f41; --text-subtitle: #5C5A5A; --background:
 
 body.dark-mode { --text-title: #ffffff; --text-subtitle: #c0c0c0; --background: #2f2f41; --background-offset: #434354; --background-line: #3f3f3f; --sub-footer-text-color: #2f2f41; --footer-text-color: #2f2f41; --footer-text-color-dark: #000000; --shadow: #09091B; --main-menu-text: #fdb73e; --main-menu-background: #2f2f41; }
 
+model-viewer { width: 500px; height: 500px; margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */
