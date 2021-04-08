@@ -6,24 +6,51 @@ weight: 3
 layout: project
 ---
 
-Implementation of **vision**, **local** and **global navigation**, and **filtering** on two Thymio robots allowing them to switch positions following optimal paths.
+I created a guitar effect pedal collection to showcase my skills in analog circuit design,
+CAD design, and rendering.
 
-- Nata perque
-- Et ferrugine laedam
-- Cedere tandem Atlante maiestas Italicis ut forma
+* **Date:** 20.03.2020
+* **Author:** Thomas Kimble
+* **Field of Study:** Electrical Engineering, Design
+* **Context:** Personal Project
 
-Levat austroque ilia castos, postquam petit confessis ad caput, ille rerum
-precor facitote nubemque. Potuit Celadon Martem?
+# 3D Model
 
-1. Imagine Assaracus victori petet femina mea haustos
-2. Sicaniam quibus agro magni
-3. In utque Troica pedum caelestia hunc tempto
-4. Gregibus certare tamen turbatque qui
+I created casing for each pedal using *Catia V5*, my go to CAD software. I then created more realistic textures in *Blender* and exported the models in the *.glb* format. Feel free to have a play around with the models shown below!
 
-## Patulis Veneris est expulit adversaque magnum mediaque
+<script>
 
-<model-viewer src="../../assets/models/Pedal2.glb" alt="A 3D model of pedal" auto-rotate camera-controls data-js-focus-visible></model-viewer>
+function nextPedal()
+{
 
+  var model = document.getElementById("model");
+  if (model.src == "../../assets/models/Pedal1.glb") {
+    model.src="../../assets/models/Pedal2.glb";
+  } else if (model.src == "../../assets/models/Pedal2.glb"){
+    model.src="../../assets/models/Pedal3.glb";
+  } else if (model.src == "../../assets/models/Pedal3.glb"){
+    model.src="../../assets/models/Pedal4.glb";
+  } else if (model.src == "../../assets/models/Pedal4.glb"){
+    model.src="../../assets/models/Pedal1.glb";
+  }
+
+  return false;
+}
+
+</script>
+
+<model-viewer id="model" src="../../assets/models/Pedal1.glb" alt="A 3D model of pedal" auto-rotate camera-controls data-js-focus-visible></model-viewer>
+<div class="strip">
+  <div class="container pt-1">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div onclick="nextPedal();" class="button_next">Random Pedal</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
 
 Omnis est signa cum nec inplevit vivit et insania Orpheu, an abit. Nimbi
 subversaque et micant suumque, tibi ipse; sed. **Deus quoque corpus**; Icarus,

@@ -871,6 +871,10 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .button:hover { color: var(--background); transform: scale(1.05); box-shadow: 0 5px 10px var(--shadow); text-decoration: none; }
 
+.button_next { white-space: nowrap; display: inline-block; height: 40px; line-height: 40px; padding: 0 14px; background: var(--background-offset); border-radius: 4px; font-size: 14px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.025em; color: #fdb73e; text-decoration: none; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+.button_next:hover { color: #fdb73e; transform: scale(1.05); box-shadow: 0 5px 10px var(--shadow); text-decoration: none; cursor: pointer; }
+
 .call { position: relative; overflow: hidden; background-color: var(--background-offset); border-radius: 4px; width: 100%; display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; z-index: 2; }
 
 @media (min-width: 576px) { .call { align-items: center; flex-direction: row; flex-wrap: wrap; } }
@@ -1055,6 +1059,14 @@ body.light-mode { --text-title: #2f2f41; --text-subtitle: #5C5A5A; --background:
 
 body.dark-mode { --text-title: #ffffff; --text-subtitle: #c0c0c0; --background: #2f2f41; --background-offset: #434354; --background-line: #3f3f3f; --sub-footer-text-color: #2f2f41; --footer-text-color: #2f2f41; --footer-text-color-dark: #000000; --shadow: #09091B; --main-menu-text: #fdb73e; --main-menu-background: #2f2f41; }
 
-model-viewer { width: 500px; height: 500px; margin: 0 auto; }
+model-viewer { width: 300px; height: 300px; margin: 0 auto; }
+
+@media (min-width: 576px) { model-viewer { width: 350px; height: 350px; } }
+
+@media (min-width: 768px) { model-viewer { width: 450px; height: 450px; } }
+
+@media (min-width: 992px) { model-viewer { width: 500px; height: 500px; } }
+
+@media (min-width: 1300px) { model-viewer { width: 600px; height: 600px; } }
 
 /*# sourceMappingURL=style.css.map */
