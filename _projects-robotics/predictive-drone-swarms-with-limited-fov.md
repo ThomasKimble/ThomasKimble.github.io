@@ -58,12 +58,6 @@ Here we can see three examples if collision free trajectories with N=3, 6 and 9 
 <div class="container">
   <div class="column justify-content-start">
     <div class="col-12 order-1">
-      {% include project_data/swarm/traj3.html %}
-    </div>
-    <div class="col-12 order-2">
-      {% include project_data/swarm/traj6.html %}
-    </div>
-    <div class="col-12 order-3">
       {% include project_data/swarm/traj9.html %}
     </div>
   </div>

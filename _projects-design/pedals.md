@@ -1,5 +1,5 @@
 ---
-title: "Pedals"
+title: "Effect Pedals"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 weight: 3
@@ -11,12 +11,137 @@ CAD design, and rendering.
 
 * **Date:** 20.03.2020
 * **Author:** Thomas Kimble
-* **Field of Study:** Electrical Engineering, Design
+* **Field of Study:** Design, CAD, Electrical Engineering
 * **Context:** Personal Project
 
-# 3D Model
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-I created casing for each pedal using *Catia V5*, my go to CAD software. I then created more realistic textures in *Blender* and exported the models in the *.glb* format. Feel free to have a play around with the models shown below!
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/All.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/BigDumbBooster.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/Chasma.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/Comet.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/Drag.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/Fuselage.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/Orbit.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/Tektite.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/pedals/TidalForce.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+  <div class="next" onclick="plusSlides(1)">&#10095;</div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+# Inspiration
+
+Having played the guitar from a young age, I have used many effect pedals. But it
+was only recently that I discovered that the circuits inside were quite similar to
+what I had been learning in my electronics and electrical engineering classes. I therefore decided to look into each of my pedals circuit design in more detail.
+
+From this I decided to create a collection of my favourite effects and render them to
+simulate a product line to potentially make and release one day.
+
+# Space Theme
+
+I needed to find a theme for the icons to put on each pedal. Along with in Robotics, I
+also have a studied space technologies at EPFL for my Master's degree. So I went with the
+**Space** theme for my pedals.
+
+Here is a list of the pedals I have currently designed circuits for:
+
+| Name             | Effect        |
+|------------------|---------------|
+| Big Dumb Booster | Boost         |
+| Chasma           | Chorus        |
+| Comet            | Compression   |
+| Drag             | Distortion    |
+| Fuselage         | Fuzz          |
+| Orbit            | Overdrive     |
+| Tektite          | Tube Screamer |
+| Tidal Force      | Tremolo       |
+
+I have plans for more, including different pedal shapes and sizes, some which can be
+found in the 3D model viewer below.
+
+# 3D Models
+
+I created casing for each pedal using *Catia V5*, my go to CAD software. I then uploaded the 3D models in *Blender* and created a studio like setting with different camera and lighting settings to render high quality images that showcase my designs. I used different textures to simulate painted and polished metal finishes and to created icons with *Adobe Illustrator* for each effect.
+
+Some more fiddling in *Blender* allowed me to export the models in the *.glb* format which allowed me to showcase a more detailed view here on my website.
+
+Feel free to have a play around with the models shown below!
+
+<model-viewer id="model" src="../../assets/models/Pedal1.glb" alt="A 3D model of pedal" auto-rotate camera-controls data-js-focus-visible></model-viewer>
+<div class="strip">
+  <div class="container pt-1">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div onclick="nextPedal();" class="button_next">Next Pedal</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+# Circuits
+
+I have designed circuits for all of the pedals mentioned above and have tested a few of them
+including the **Fuselage** fuzz circuit based off the *Electroharmonix Big Muff* Circuit. Here
+is its schematic:
+
+<img src="../../images/project-images/pedals/Circuit.svg" style="width:100%">
+
+This circuit uses silicon transistors to create a fuzz effect. It consists of three stages:
+* An input booster controlled by the *Sustain* potentiometer
+* Following is a clipping amplifier characterised by the clipping diodes *D1* to *D4* and a combination of high and low pass filters controlled with the *Tone* potentiometer
+* We finish with an output booster circuit controlled by the *Volume* potentiometer
+
+# Additional Material
+
+For any more information on the project including more circuit diagrams or pedal ideas, please don't hesitate to contact me <a href="/contact">here</a>.
+
 
 <script>
 
@@ -29,6 +154,8 @@ function nextPedal()
   } else if (model.src == "../../assets/models/Pedal2.glb"){
     model.src="../../assets/models/Pedal3.glb";
   } else if (model.src == "../../assets/models/Pedal3.glb"){
+    model.src="../../assets/models/Pedal3S.glb";
+  } else if (model.src == "../../assets/models/Pedal3S.glb"){
     model.src="../../assets/models/Pedal4.glb";
   } else if (model.src == "../../assets/models/Pedal4.glb"){
     model.src="../../assets/models/Pedal1.glb";
@@ -37,37 +164,33 @@ function nextPedal()
   return false;
 }
 
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 </script>
-
-<model-viewer id="model" src="../../assets/models/Pedal1.glb" alt="A 3D model of pedal" auto-rotate camera-controls data-js-focus-visible></model-viewer>
-<div class="strip">
-  <div class="container pt-1">
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <div onclick="nextPedal();" class="button_next">Random Pedal</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<br/>
-
-Omnis est signa cum nec inplevit vivit et insania Orpheu, an abit. Nimbi
-subversaque et micant suumque, tibi ipse; sed. **Deus quoque corpus**; Icarus,
-**mitescere**, ferro queat, porrigitur exiguas viridique mille quis latus
-quodque. Non una genuisse ullis efficiet ad corpore nunc mentesque praestant?
-
-_Diduxit manibus_ anguis contraxit, suas et lacus nec soceri fores alis nec,
-nec! Data pater Perseu minanti animam operitur illa dolorem.
-
-Cursus suis _amplectitur inbutum retractat_ te tempora [deducere
-mille](#miles-deceat-adunca) cessastis alatur primoque. Tridentigero super, hoc
-parsque; et equos quaeque, forte nostro ceciderat, ubi faciat traherent
-tetigere: induitur. Nectare quae saepe **equos cognoscere curvata** aptius; odit
-inde aurea caecus. Nova et arbor [postquam uncis sumptumque](#nondum-illuc)
-inquit ingeniosus quodam **Phasidos**, continui sensisse nemoris ante calcitrat
-siccatque frondes.
-
-Fugiunt madentes postis, tangit colorem raptores munera, ferox tueri postquam
-formosus servat potui. Luce ebur, pulcherrimus plus tradere! _Quam perque
-semper_?
