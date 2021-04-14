@@ -1,5 +1,5 @@
 ---
-title: "Effect Pedals"
+title: "Design of a Guitar Effect Pedal Collection"
 date: 2018-11-18T12:33:46+10:00
 featured: true
 weight: 3
@@ -84,8 +84,8 @@ simulate a product line to potentially make and release one day.
 
 # Space Theme
 
-I needed to find a theme for the icons to put on each pedal. Along with in Robotics, I
-also have a studied space technologies at EPFL for my Master's degree. So I went with the
+I needed to find a theme for the icons to put on each pedal. Along with Robotics, I
+also have studied space technologies at EPFL for my Master's degree. So I went with the
 **Space** theme for my pedals.
 
 Here is a list of the pedals I have currently designed circuits for:
@@ -141,56 +141,3 @@ This circuit uses silicon transistors to create a fuzz effect. It consists of th
 # Additional Material
 
 For any more information on the project including more circuit diagrams or pedal ideas, please don't hesitate to contact me <a href="/contact">here</a>.
-
-
-<script>
-
-function nextPedal()
-{
-
-  var model = document.getElementById("model");
-  if (model.src == "../../assets/models/Pedal1.glb") {
-    model.src="../../assets/models/Pedal2.glb";
-  } else if (model.src == "../../assets/models/Pedal2.glb"){
-    model.src="../../assets/models/Pedal3.glb";
-  } else if (model.src == "../../assets/models/Pedal3.glb"){
-    model.src="../../assets/models/Pedal3S.glb";
-  } else if (model.src == "../../assets/models/Pedal3S.glb"){
-    model.src="../../assets/models/Pedal4.glb";
-  } else if (model.src == "../../assets/models/Pedal4.glb"){
-    model.src="../../assets/models/Pedal1.glb";
-  }
-
-  return false;
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-</script>

@@ -27,7 +27,7 @@ collections:
     output: true
   projects-space:
     output: true
-  projects-cs:
+  projects-software:
     output: true
   projects-music:
     output: true
