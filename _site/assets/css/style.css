@@ -918,6 +918,10 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .button_next:hover { color: #fdb73e; transform: scale(1.05); box-shadow: 0 5px 10px var(--shadow); text-decoration: none; cursor: pointer; }
 
+.button_link { margin-left: 40px; margin-right: 40px; white-space: nowrap; display: inline-block; height: 40px; line-height: 40px; padding: 0 40px; background: var(--background-offset); border-radius: 4px; font-size: 14px; font-weight: normal; text-transform: uppercase; letter-spacing: 0.025em; color: #fdb73e; text-decoration: none; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
+
+.button_link:hover { color: #fdb73e; text-decoration: bold; cursor: pointer; }
+
 .call { position: relative; overflow: hidden; background-color: var(--background-offset); border-radius: 4px; width: 100%; display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; z-index: 2; }
 
 @media (min-width: 576px) { .call { align-items: center; flex-direction: row; flex-wrap: wrap; } }
@@ -965,6 +969,10 @@ ul li, ol li { padding: 0; margin: 0; }
 .content h2 { font-family: Helvetica, Arial, sans-serif, -apple-system; font-size: 26px; font-weight: normal; line-height: 1.4; margin-top: 30px; color: var(--text-title); }
 
 .content h3 { font-family: Helvetica, Arial, sans-serif, -apple-system; font-size: 20px; line-height: 1.4; font-weight: normal; margin-top: 30px; color: var(--text-title); }
+
+.content h4 { text-decoration: none; color: #fdb73e; }
+
+.content h4:hover { color: var(--background); text-decoration: bold; }
 
 .content ul, .content ol { margin-bottom: 20px; }
 

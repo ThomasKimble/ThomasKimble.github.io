@@ -124,6 +124,12 @@ Nevertheless, we were able to predict the future number of friends of each user 
 <video style="width:100%;" src="/images/project-images/friendship/friendship_pitch.mp4" controls>
 </video>
 
-# GitHub
+# Additional Information
 
-Please find the code in the GitHub repository <a href="https://github.com/ThomasKimble/mobility_and_friendship" target="_blank">here</a>.
+For any more information on the project, please don't hesitate to contact me <a href="/contact">here</a>, or check out the code below.
+
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <a class="button_link" href="https://github.com/ThomasKimble/mobility_and_friendship" target="_blank">Code</a>
+  </div>
+</div>

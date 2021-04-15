@@ -89,7 +89,13 @@ Although we don't have a video of the final results on a track such as shown abo
 <video class="web-image-ms" src="/images/project-images/epuck/line_new.mp4" controls> </video>
 <br>
 
-
 # Additional Material
 
-For any more information on the project, please don't hesitate to contact me <a href="/contact">here</a>, or check out the report and code below.
+For any more information on the project, please don't hesitate to contact me <a href="/contact">here</a>, or check out the report (in French) and code below.
+
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <a class="button_link" href="https://github.com/ThomasKimble/e-puck2LineFollow" target="_blank">Code</a>
+    <a class="button_link" href="/images/project-images/epuck/epuck_report.pdf" target="_blank">Report</a>
+  </div>
+</div>

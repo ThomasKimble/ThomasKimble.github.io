@@ -156,4 +156,10 @@ rather than solving two separate problems.
 
 # Additional Material
 
-For more details, please find my written report <a href="/images/project-images/swarm/swarm_report.pdf" target="_blank">here</a>. Unfortunately I can not share the code for this project due a confidentiality and non-use agreement.
+For any more information on the project, please don't hesitate to contact me <a href="/contact">here</a>, or check out the report below. Unfortunately I can not share the code for this project due a confidentiality and non-use agreement.
+
+<div class="row justify-content-center">
+  <div class="col-auto">
+    <a class="button_link" href="/images/project-images/swarm/swarm_report.pdf" target="_blank">Report</a>
+  </div>
+</div>
