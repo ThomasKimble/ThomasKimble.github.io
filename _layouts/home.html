@@ -38,7 +38,7 @@ bodyClass: page-home
         <div class="project project-summary">
           <div class="project-content">
             <h2 class="project-title">
-              <a href="/projects-robotics/predictive-drone-swarms-with-limited-fov/">Predictive Drone Swarms with Limited Field of View</a>
+              <a href="/projects-robotics/predictive-drone-swarms-with-limited-fov/">Predictive Drone Swarms with Limited FOV</a>
             </h2>
             <p>A study of the effect of limited field of view on drone swarms using a
               state of the art predictive trajectory generation and collision avoidance algorithm.</p>
@@ -50,7 +50,7 @@ bodyClass: page-home
         <div class="project project-summary">
           <div class="project-content">
             <h2 class="project-title">
-              <a href="/projects-cs/mobility_and_friendship/">Does Mobility Make or Break Friendships?</a>
+              <a href="/projects-software/mobility_and_friendship/">Does Mobility Make or Break Friendships?</a>
             </h2>
             <p>
               A study of the effect of Mobility on Friendship using different models to predict how many friends Foursquare users will make or break in a 22 month time period.
@@ -111,13 +111,13 @@ bodyClass: page-home
 
       {% for feature in site.data.features %}
       <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
+        <a class="feature" href="{{site.baseurl}}/projects#{{ feature.ref }}">
           {% if feature.image %}
           <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image | relative_url }}" /></div>
           {% endif %}
           <h2 class="feature-title">{{ feature.title }}</h2>
           <div class="feature-content">{{ feature.description }}</div>
-        </div>
+        </a>
       </div>
       {% endfor %}
 

@@ -2,26 +2,31 @@
   {
     "title": "Robotics",
     "description": "Master's Degree in Robotics.",
-    "image": "images/features/robotics.png"
+    "image": "images/features/robotics.png",
+    "ref": "projects-robotics"
   },
   {
     "title": "Space Technologies",
     "description": "Minor in Space Technologies.",
-    "image": "images/features/space.png"
+    "image": "images/features/space.png",
+    "ref": "projects-space"
   },
   {
     "title": "Software Engineering",
     "description": "Skills developed throughout my studies.",
-    "image": "images/features/computer_science.png"
-  },
-  {
-    "title": "Music",
-    "description": "Musician from a young age.",
-    "image": "images/features/music.png"
+    "image": "images/features/computer_science.png",
+    "ref": "projects-software"
   },
   {
     "title": "Design",
     "description": "A little hobby of mine.",
-    "image": "images/features/design.png"
+    "image": "images/features/design.png",
+    "ref": "projects-design"
+  },
+  {
+    "title": "Music",
+    "description": "Musician from a young age.",
+    "image": "images/features/music.png",
+    "ref": "projects-music"
   }
 ]

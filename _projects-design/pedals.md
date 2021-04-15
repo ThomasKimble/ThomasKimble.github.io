@@ -131,7 +131,9 @@ I have designed circuits for all of the pedals mentioned above and have tested a
 including the **Fuselage** fuzz circuit based off the *Electroharmonix Big Muff* Circuit. Here
 is its schematic:
 
-<img src="../../images/project-images/pedals/Circuit.svg" style="width:100%">
+<div class="web-image-full">
+  <img src="../../images/project-images/pedals/Circuit.svg">
+</div>
 
 This circuit uses silicon transistors to create a fuzz effect. It consists of three stages:
 * An input booster controlled by the *Sustain* potentiometer

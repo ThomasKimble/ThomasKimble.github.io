@@ -1,0 +1,93 @@
+I"�<p>We designed a shelf unit using folded sheet metal as the primary material. Combining metal and wood, we sketched, designed and produced a modern piece of furniture to be manufactured for an industrial design course.</p>
+
+<ul>
+  <li><strong>Date:</strong> 15.02.2020</li>
+  <li><strong>Author:</strong> Thomas Kimble, Ken Pillonel, Jonas Ulbrich</li>
+  <li><strong>Field of Study:</strong> Industrial Design, CAD</li>
+  <li><strong>Context:</strong> EPFL Industrial Design V and VI project</li>
+</ul>
+
+<div class="web-image-full">
+    <img src="../../images/project-images/butterfly/butterfly_render.png" />
+</div>
+
+<h1 id="the-idea">The Idea</h1>
+
+<p>The goal of the project was to create an object based around folded sheet metal. The object needed to be functional, visually pleasing and also has to be simple enough to fit in the manufacturing budget. We decided to work on a shelf unit.</p>
+
+<h1 id="design">Design</h1>
+
+<p>After doing some small prototyping we decided it would be a mixture of folded aluminium for the structure and wood for the shelves. The shelves would slide into two aluminium frames and hide any screws used to mount the structures to the wall.</p>
+
+<p>Inspired by the <em>Apple</em> “cheese grater” look on the newly released Mac Pros, we originally wanted to add holes to our shelf to give it a more open feel so objects placed inside the aluminium structures would not be too hidden. However, after talking with multiple manufacturers, we realised that the addition of the holes would increase the price of the product by nearly 70%, and would like cause warping of the material. We therefore opted for a full sheet metal design.</p>
+
+<div class="web-image-md">
+    <img src="../../images/project-images/butterfly/butterfly_holes.svg" />
+</div>
+
+<p>We chose a matte RAL 3022 Salmon pink finnish for the design to give it a smooth feel with vibrant visuals. We chose to pair it with a light wood to stick with the bright theme of the design.</p>
+
+<div class="web-image-sm">
+    <img src="../../images/project-images/butterfly/Pantone.png" />
+</div>
+
+<p><br /></p>
+
+<p>We created the piece in <em>Catia V5</em>, our go-to CAD software. We then uploaded the 3D models to <em>Blender</em> and created a studio like environment with different camera and lighting settings to render high quality images that showcase the design. Some more fiddling in <em>Blender</em> allowed us export the models in the <em>.glb</em> format, letting us showcase a more detailed view here.</p>
+
+<model-viewer id="model" src="../../assets/models/Butterfly.glb" alt="Butterfly Shelf" auto-rotate="" camera-controls="" data-js-focus-visible=""></model-viewer>
+
+<p><br /></p>
+
+<h1 id="manufacturing">Manufacturing</h1>
+
+<p>We sent off the plans to our manufacturer and all was set. A few weeks went by and we went to their shop to pick up the unit. We had a funny surprise when we got there, they liked the shelf so much that they decided to manufacture a few extras for themselves! (with our approval of course) However, they did ask after they had already made them… We learned a lesson here too: you need to protect yourself and your designs when you inevitably work with other people. This was just an educational project so it didn’t matter all that much.</p>
+
+<div class="row justify-content-center">
+    <img src="../../images/project-images/butterfly/shelf_collage.png" style="width:75%" />
+</div>
+
+<p>Here you can see our shelves on the top right, as well as some extra units that the manufacturing company had made for themselves to be on display in their offices.</p>
+
+<h1 id="final-product">Final Product</h1>
+
+<p>Some professional pictures were taken of our shelf unit as well as other student projects following the same folded sheet metal theme. We are very happy with the results!</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="../../images/project-images/butterfly/ecal_image1.jpeg" style="width:100%" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/butterfly/ecal_image2.jpeg" style="width:100%" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/butterfly/ecal_image3.jpeg" style="width:100%" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/butterfly/ecal_image4.jpeg" style="width:100%" />
+  </div>
+
+  <!-- Next and previous buttons -->
+  <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+  <div class="next" onclick="plusSlides(1)">&#10095;</div>
+</div>
+<p><br /></p>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<h1 id="additional-material">Additional Material</h1>
+
+<p>For any more information on the project, please don’t hesitate to contact me <a href="/contact">here</a>.</p>
+:ET

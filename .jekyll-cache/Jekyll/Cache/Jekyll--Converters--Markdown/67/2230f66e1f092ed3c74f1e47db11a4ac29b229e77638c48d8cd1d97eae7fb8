@@ -1,0 +1,68 @@
+I"�<p>We created a precise line following algorithm for the <em>e-puck2</em> robot thanks to the addition of 3D printed hardware and a mirror, bypassing the robot’s sensor limitations.</p>
+
+<ul>
+  <li><strong>Date:</strong> 15.02.2020</li>
+  <li><strong>Author:</strong> Thomas Kimble, Adrie Ohana</li>
+  <li><strong>Field of Study:</strong> Robotics, CAD</li>
+  <li><strong>Context:</strong> EPFL Embedded Systems and Robotics project</li>
+</ul>
+
+<h1 id="mirror-support">Mirror Support</h1>
+
+<p>I created the piece in <em>Catia V5</em>, our go-to CAD software. Some fiddling in <em>Blender</em> allowed me export the models in the <em>.glb</em> format, letting us showcase a more detailed view here.</p>
+
+<model-viewer id="model" src="../../assets/models/Support.glb" alt="Butterfly Shelf" auto-rotate="" camera-controls="" data-js-focus-visible=""></model-viewer>
+
+<p><br /></p>
+
+<h1 id="track">Track</h1>
+
+<p>The robot can follow lines of thickness between <em>0.4</em> and <em>1cm</em> with a minimum turn radius of <em>7.5cm</em>. The robot detects an intersection when it notices a line thickness between <em>1.6</em> and <em>2.2cm</em> and needs to be heading in a straight direction. We therefore define a <em>Stop Triangle</em> as shown here:</p>
+
+<div class="row justify-content-center">
+    <img src="../../images/project-images/epuck/Stop.svg" style="width:50%" />
+</div>
+
+<p>We can combine up to four <em>Stop Triangle</em> to create intersections where the robot stops and awaits one of four instructions from the sound remote. We created an app with four buttons for each instruction, which generates a frequency detected by the robot.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Instruction</th>
+      <th style="text-align: center">Sine Wave Frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Skip Stop</td>
+      <td style="text-align: center">2000 Hz</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Left Turn</td>
+      <td style="text-align: center">3000 Hz</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Right Turn</td>
+      <td style="text-align: center">4000 Hz</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">U Turn</td>
+      <td style="text-align: center">5000 Hz</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Skip Stop</li>
+</ul>
+
+<p>This allows us to create tracks where the robot can follow lines, arrive at intersections and await instructions. An example of such a track can be found below. You can get quite creative! We even tried drawing tracks with a thick pen, which worked, but intersections are more tricky.</p>
+
+<div class="row justify-content-center">
+    <img src="../../images/project-images/epuck/Track.svg" style="width:100%" />
+</div>
+
+<h1 id="additional-material">Additional Material</h1>
+
+<p>For any more information on the project, please don’t hesitate to contact me <a href="/contact">here</a>.</p>
+:ET
