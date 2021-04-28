@@ -74,7 +74,7 @@
   color: $primary;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.3s ease;
+  transition: 0.2s linear;
   border-radius: 3px;
   user-select: none;
 }
@@ -101,7 +101,7 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.6s linear;
 }
 
 .dot.active, .dot:hover {

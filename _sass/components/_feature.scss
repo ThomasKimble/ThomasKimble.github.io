@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  transition: all 0.2s ease;
+  transition: all 0.2s linear;
   .feature-image {
     flex: 0 0 auto;
     width: 90px;

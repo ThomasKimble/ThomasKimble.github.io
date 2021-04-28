@@ -71,11 +71,11 @@ dayNight.addEventListener("click", function() {
     linkedinLogo.src = "/images/social/linkedin.svg";
     lightDiv();
   } else {
-    desktopLogo.src = "/images/logo/logo.svg";
-    mobileLogo.src = "/images/logo/logo-mobile.svg";
-    githubLogo.src = "/images/social/github.svg";
-    linkedinLogo.src = "/images/social/linkedin.svg";
-    lightDiv();
+    desktopLogo.src = "/images/logo/logo-dark.svg";
+    mobileLogo.src = "/images/logo/logo-mobile-dark.svg";
+    githubLogo.src = "/images/social/github-dark.svg";
+    linkedinLogo.src = "/images/social/linkedin-dark.svg";
+    darkDiv();
   }
 });
 
@@ -93,11 +93,11 @@ if (document.body.classList.contains("dark-mode")) {
   linkedinLogo.src = "/images/social/linkedin.svg";
   lightDiv();
 } else {
-  desktopLogo.src = "/images/logo/logo.svg";
-  mobileLogo.src = "/images/logo/logo-mobile.svg";
-  githubLogo.src = "/images/social/github.svg";
-  linkedinLogo.src = "/images/social/linkedin.svg";
-  lightDiv();
+  desktopLogo.src = "/images/logo/logo-dark.svg";
+  mobileLogo.src = "/images/logo/logo-mobile-dark.svg";
+  githubLogo.src = "/images/social/github-dark.svg";
+  linkedinLogo.src = "/images/social/linkedin-dark.svg";
+  darkDiv();
 }
 
 function darkDiv() {
