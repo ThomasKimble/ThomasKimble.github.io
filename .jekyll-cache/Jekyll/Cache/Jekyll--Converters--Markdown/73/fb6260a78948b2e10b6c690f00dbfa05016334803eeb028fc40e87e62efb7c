@@ -1,0 +1,153 @@
+I"S<p>I created a guitar effect pedal collection to showcase my skills in analog circuit design,
+CAD design, and rendering.</p>
+
+<ul>
+  <li><strong>Date:</strong> 20.03.2020</li>
+  <li><strong>Author:</strong> Thomas Kimble</li>
+  <li><strong>Field of Study:</strong> Software Engineering, Embedded Systems, C</li>
+  <li><strong>Context:</strong> EPFL Ma-1 <em>Microprogrammed Embedded Systems</em> Project</li>
+</ul>
+
+<div class="web-image-full">
+    <img src="../../images/project-images/rocket/DS.png" />
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="../../images/project-images/rocket/rocket_main.png" style="width:100%" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/rocket/rocket_sub.png" style="width:100%" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/rocket/rocket_sprites.png" style="width:100%" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../images/project-images/rocket/rocket_tiles.png" style="width:100%" />
+  </div>
+
+  <!-- Next and previous buttons -->
+  <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+  <div class="next" onclick="plusSlides(1)">&#10095;</div>
+</div>
+<p><br /></p>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<h1 id="inspiration">Inspiration</h1>
+
+<p>Having played the guitar from a young age, I have used many effect pedals. But it
+was only recently that I discovered that the circuits inside were quite similar to
+what I had been learning in my electronics and electrical engineering classes. I therefore decided to look into each of my pedals circuit design in more detail.</p>
+
+<p>From this I decided to create a collection of my favourite effects and render them to
+simulate a product line to potentially make and release one day.</p>
+
+<h1 id="space-theme">Space Theme</h1>
+
+<p>I needed to find a theme for the icons to put on each pedal. Along with Robotics, I
+also have studied space technologies at EPFL for my Master’s degree. So I went with the
+<strong>Space</strong> theme for my pedals.</p>
+
+<p>Here is a list of the pedals I have currently designed circuits for:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Big Dumb Booster</td>
+      <td>Boost</td>
+    </tr>
+    <tr>
+      <td>Chasma</td>
+      <td>Chorus</td>
+    </tr>
+    <tr>
+      <td>Comet</td>
+      <td>Compression</td>
+    </tr>
+    <tr>
+      <td>Drag</td>
+      <td>Distortion</td>
+    </tr>
+    <tr>
+      <td>Fuselage</td>
+      <td>Fuzz</td>
+    </tr>
+    <tr>
+      <td>Orbit</td>
+      <td>Overdrive</td>
+    </tr>
+    <tr>
+      <td>Tektite</td>
+      <td>Tube Screamer</td>
+    </tr>
+    <tr>
+      <td>Tidal Force</td>
+      <td>Tremolo</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I have plans for more, including different pedal shapes and sizes, some which can be
+found in the 3D model viewer below.</p>
+
+<h1 id="3d-models">3D Models</h1>
+
+<p>I created casing for each pedal using <em>Catia V5</em>, my go to CAD software. I then uploaded the 3D models in <em>Blender</em> and created a studio like setting with different camera and lighting settings to render high quality images that showcase my designs. I used different textures to simulate painted and polished metal finishes and to created icons with <em>Adobe Illustrator</em> for each effect.</p>
+
+<p>Some more fiddling in <em>Blender</em> allowed me to export the models in the <em>.glb</em> format which allowed me to showcase a more detailed view here on my website.</p>
+
+<p>Feel free to have a play around with the models shown below!</p>
+
+<model-viewer id="model" src="../../assets/models/Pedal1.glb" alt="A 3D model of pedal" auto-rotate="" camera-controls="" data-js-focus-visible=""></model-viewer>
+<div class="strip">
+  <div class="container pt-1">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <div onclick="nextPedal();" class="button_next">Next Pedal</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p><br /></p>
+
+<h1 id="circuits">Circuits</h1>
+
+<p>I have designed circuits for all of the pedals mentioned above and have tested a few of them
+including the <strong>Fuselage</strong> fuzz circuit based off the <em>Electroharmonix Big Muff</em> Circuit. Here
+is its schematic:</p>
+
+<div class="web-image-full">
+  <img src="../../images/project-images/pedals/Circuit.svg" />
+</div>
+
+<p>This circuit uses silicon transistors to create a fuzz effect. It consists of three stages:</p>
+<ul>
+  <li>An input booster controlled by the <em>Sustain</em> potentiometer</li>
+  <li>Following is a clipping amplifier characterised by the clipping diodes <em>D1</em> to <em>D4</em> and a combination of high and low pass filters controlled with the <em>Tone</em> potentiometer</li>
+  <li>We finish with an output booster circuit controlled by the <em>Volume</em> potentiometer</li>
+</ul>
+
+<h1 id="additional-material">Additional Material</h1>
+
+<p>For any more information on the project including more circuit diagrams or pedal ideas, please don’t hesitate to contact me <a href="/contact">here</a>.</p>
+:ET

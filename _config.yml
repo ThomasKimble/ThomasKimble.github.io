@@ -21,17 +21,15 @@ seo:
   meta_og_description: "Thomas Kimble | Project Page"
 
 collections:
-  projects:
+  robotics:
     output: true
-  projects-robotics:
+  space:
     output: true
-  projects-space:
+  software:
     output: true
-  projects-software:
+  design:
     output: true
-  projects-music:
-    output: true
-  projects-design:
+  music:
     output: true
 
 sass:
