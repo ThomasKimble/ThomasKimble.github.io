@@ -8,10 +8,10 @@ layout: project
 
 We created a precise line following algorithm for the *e-puck2* robot thanks to the addition of 3D printed hardware and a mirror, bypassing the robot's sensor limitations.
 
-* **Date:** 15.02.2020
+* **Date:** May 2019
 * **Author:** Thomas Kimble, Adrien Ohana
 * **Field of Study:** Robotics, C++, CAD
-* **Context:** EPFL Ma-1 *Embedded Systems and Robotics* Project
+* **Context:** EPFL Ba-6 *Embedded Systems and Robotics* Project
 
 # Goal
 
@@ -95,7 +95,7 @@ For any more information on the project, please don't hesitate to contact me <a 
 
 <div class="row justify-content-center">
   <div class="col-auto">
-    <a class="button_link" href="https://github.com/ThomasKimble/e-puck2LineFollow" target="_blank">Code</a>
+    <a class="button_link" href="https://github.com/ThomasKimble/epuck2-line-follow" target="_blank">Code</a>
     <a class="button_link" href="/images/project-images/epuck/epuck_report.pdf" target="_blank">Report</a>
   </div>
 </div>

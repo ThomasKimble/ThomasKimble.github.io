@@ -101,13 +101,22 @@ if (document.body.classList.contains("dark-mode")) {
 }
 
 function darkDiv() {
-  var d = document.getElementById('ball_id');
-  d.style.position = "absolute";
-  d.style.left = '32px';
+  var ball = document.getElementById('ball_id');
+  ball.style.position = "absolute";
+  ball.style.left = '32px';
 }
 
 function lightDiv() {
-  var d = document.getElementById('ball_id');
-  d.style.position = "absolute";
-  d.style.left = '3px';
+  var ball = document.getElementById('ball_id');
+  ball.style.position = "absolute";
+  ball.style.left = '3px';
+}
+
+// Page transitions
+window.onload = () => {
+  const transition_el = document.querySelector('.transition');
+
+  setTimeout(() => {
+    transition_el.classList.remove('is-active');
+  }, 0);
 }

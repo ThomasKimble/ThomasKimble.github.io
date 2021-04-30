@@ -8,7 +8,7 @@ layout: project
 
 A study of the effect of **Mobility** on **Friendship** using a different models to predict how many friendships Foursquare users will make or break in a 22 month time period.
 
-* **Date:** 18.12.2020
+* **Date:** December 2020
 * **Authors:** Thomas Kimble, Shadi Naguib, Leo Alvarez
 * **Field of Study:** Data Science, Python
 * **Context:** EPFL Ma-3 *Applied Data Analysis* Project
@@ -130,6 +130,6 @@ For any more information on the project, please don't hesitate to contact me <a 
 
 <div class="row justify-content-center">
   <div class="col-auto">
-    <a class="button_link" href="https://github.com/ThomasKimble/mobility_and_friendship" target="_blank">Code</a>
+    <a class="button_link" href="https://github.com/ThomasKimble/mobility-and-friendship" target="_blank">Code</a>
   </div>
 </div>

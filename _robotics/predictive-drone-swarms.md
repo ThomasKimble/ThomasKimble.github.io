@@ -8,7 +8,7 @@ layout: project
 
 A study of the effect of **limited field of view** on drone swarms using a state of the art **predictive** trajectory generation and collision avoidance algorithm.
 
-* **Date:** 15.01.2021
+* **Date:** January 2021
 * **Author:** Thomas Kimble
 * **Field of Study:** Aerial Robotics, Model Predictive Control
 * **Context:** EPFL Ma-3 *Robotics* Semester Project

@@ -72,6 +72,17 @@ body {
   --black: #161628;
   --white: #F2F2FA;
   --primary: #fdb73e;
+  --text-title: #ffffff;
+  --text-subtitle: #c0c0c0;
+  --background: #2f2f41;
+  --background-offset: #434354;
+  --background-line: #3f3f3f;
+  --sub-footer-text-color: #2f2f41;
+  --footer-text-color: #2f2f41;
+  --footer-text-color-dark: #000000;
+  --shadow: #09091B;
+  --main-menu-text: #fdb73e;
+  --main-menu-background: #2f2f41;
 }
 
 body.light-mode {
@@ -122,4 +133,46 @@ model-viewer {
     width: 600px;
     height: 600px;
   }
+}
+
+.loading-image {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 47.5%;
+  width: 5%;
+  animation: rotation 0.65s infinite steps(12,end);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.transition {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: var(--background);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+  @include media-breakpoint-up(sm) {
+    top: 70px;
+  }
+  @include media-breakpoint-up(md) {
+    top: 60px;
+  }
+}
+
+.transition.is-active {
+  opacity: 1;
+  pointer-events: all;
 }

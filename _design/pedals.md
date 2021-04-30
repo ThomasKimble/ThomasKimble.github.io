@@ -9,7 +9,7 @@ layout: project
 I created a guitar effect pedal collection to showcase my skills in analog circuit design,
 CAD design, and rendering.
 
-* **Date:** 20.03.2020
+* **Date:** March 2020
 * **Author:** Thomas Kimble
 * **Field of Study:** Design, CAD, Electrical Engineering
 * **Context:** Personal Project

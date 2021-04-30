@@ -6,10 +6,9 @@ weight: 3
 layout: project
 ---
 
-I created a guitar effect pedal collection to showcase my skills in analog circuit design,
-CAD design, and rendering.
+I developed an arcade-like game named Rocket-Crash and tested it on the Nintendo DS microprogrammed embedded system. I designed simple graphics and sprites and used a finite state machine to navigate through game modes.
 
-* **Date:** 20.03.2020
+* **Date:** January 2020
 * **Author:** Thomas Kimble
 * **Field of Study:** Software Engineering, Embedded Systems, C
 * **Context:** EPFL Ma-1 *Microprogrammed Embedded Systems* Project
@@ -17,6 +16,14 @@ CAD design, and rendering.
 <div class="web-image-full">
     <img src="../../images/project-images/rocket/DS.png">
 </div>
+
+# Goal
+
+The goal of this project was to create a game for the Nintendo DS using all of its features, including the both ARM processors, the on board timers and the graphic and sound modules.
+
+# Method
+
+# Graphics
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -57,6 +64,7 @@ CAD design, and rendering.
   <span class="dot" onclick="currentSlide(5)"></span>
 </div>
 
+# Results
 
 
 # Additional Material
@@ -65,6 +73,6 @@ For any more information on the project, please don't hesitate to contact me <a 
 
 <div class="row justify-content-center">
   <div class="col-auto">
-    <a class="button_link" href="https://github.com/ThomasKimble/rocket_crash" target="_blank">Code</a>
+    <a class="button_link" href="https://github.com/ThomasKimble/rocket-crash" target="_blank">Code</a>
   </div>
 </div>

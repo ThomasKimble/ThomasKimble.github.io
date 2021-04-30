@@ -23,6 +23,9 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body class='page {{page.bodyClass}}'>
+  <div class="transition is-active">
+    <img class="loading-image" src="/images/loading.svg">
+  </div>
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
     {% include header.html headerClass='header-extra' %}
@@ -31,8 +34,8 @@
   {% include style-switcher.html %}
   {% include footer.html %}
   {% include sub-footer.html %}
-  <script type="text/javascript" src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
-  <script type="text/javascript" src="{{ "/assets/js/style-switcher.js" | relative_url }}"></script>
   {% include google-analytics.html %}
+  <script defer type="text/javascript" src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/style-switcher.js" | relative_url }}"></script>
 </body>
 </html>

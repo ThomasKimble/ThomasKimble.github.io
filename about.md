@@ -24,7 +24,7 @@ Maths and Science have always intrigued me, so becoming an engineer was a natura
 been fascinated as to how things work. I also have an eye for design and aesthetics, allowing me to show
 a more creative side in contrast with my studies.
 
-There has always a guitar around me and I started playing at 7 years old. I have played in multiple bands,
+There has always been a guitar around me, and I started playing at 7 years old. I have played in multiple bands,
 and performed at festivals, in bars, outdoors, indoors... you name it! Curiosity lead me to also pick up
 other instruments such as the drums and the piano over the years, allowing me to compose songs myself.
 

@@ -8,7 +8,7 @@ layout: project
 
 We designed a shelf unit using folded sheet metal as the primary material. Combining metal and wood, we sketched, designed and produced a modern piece of furniture to be manufactured for an industrial design course.
 
-* **Date:** 15.02.2020
+* **Date:** July 2020
 * **Author:** Thomas Kimble, Ken Pillonel, Jonas Ulbrich
 * **Field of Study:** Industrial Design, CAD
 * **Context:** EPFL Ma-1 and Ma-2 *Industrial Design V and VI* project
