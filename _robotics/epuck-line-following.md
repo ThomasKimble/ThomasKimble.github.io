@@ -1,6 +1,6 @@
 ---
 title: "Line Following e-puck2"
-date: 2020-02-18T12:33:46+2:00
+date: 2021-05-01T12:00:00+2:00
 featured: true
 weight: 3
 layout: project

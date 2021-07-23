@@ -744,6 +744,8 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .page .wrapper { flex: 1 0 0; }
 
+.plotly-graph { display: block; }
+
 .web-image-full { display: block; margin-left: auto; margin-right: auto; width: 100%; padding: 10px; }
 
 .web-image-lg { display: block; margin-left: auto; margin-right: auto; width: 80%; padding: 10px; }

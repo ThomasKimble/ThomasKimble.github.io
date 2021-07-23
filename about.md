@@ -7,13 +7,9 @@ bodyClass: page-about
 
 My name is **Thomas Oliver Kimble** and I am an engineer with a passion for music.
 
-<p align="left">
-  <img
-    src="/images/about/me.jpg"
-    alt="Me"
-    width="60%"
-  />
-</p>
+<div class="web-image-md">
+    <img src="/images/about/me.jpg">
+</div>
 
 # Personal life
 
