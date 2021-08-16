@@ -5,17 +5,17 @@
     "image": "images/features/robotics.png",
     "ref": "projects-robotics"
   },
+    {
+    "title": "Software Engineering and Data Science",
+    "description": "Skills developed throughout my studies.",
+    "image": "images/features/computer_science.png",
+    "ref": "projects-software"
+  },
   {
     "title": "Space Technologies",
     "description": "Minor in Space Technologies.",
     "image": "images/features/space.png",
     "ref": "projects-space"
-  },
-  {
-    "title": "Software Engineering",
-    "description": "Skills developed throughout my studies.",
-    "image": "images/features/computer_science.png",
-    "ref": "projects-software"
   },
   {
     "title": "Design",
