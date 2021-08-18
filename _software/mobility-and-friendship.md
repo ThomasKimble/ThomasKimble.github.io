@@ -19,7 +19,6 @@ It is almost impossible to precisely forecast the creation and deletion of parti
 
 Throughout this study, we used data from the social network *Foursquare* to build and train two different prediction models in order to determine whether friendships will be created or deleted a 22 month time period.
 
-
 Foursquare is a location-based social network which database gathers 13+ billion check-ins, used by developers around the globe for localisation purposes. A check-in occurs when a user communicates their position, associated with a location category like a bakery, shops, boats, clubs, etc. We extracted a fraction of this database used in several papers exploring multiple aspects of friendship and mobility, and we will base our analysis on this dataset.
 
 
@@ -79,7 +78,7 @@ define a coefficient **C** for each level 0 category, reflecting how social this
 |            Event            |     1.5     |
 |            Other            |     1.0     |
 
-Second of all, we want to know if a check-in was performed during the peak hours of the venue category. For this we use level 1 categories to be slightly more precise in our categorisation. If a check-in is within the venue's peak hours, we give it a score of **S_peak = 2**, if it isn't we give it **S_peak = 1**. Each check-in can now get a social score by multiplying the coefficient with the peak hour score: **S = C*S_peak**.
+Second of all, we want to know if a check-in was performed during the peak hours of the venue category. For this we use level 1 categories to be slightly more precise in our categorisation. If a check-in is within the venue's peak hours, we give it a score of **$$S_peak = 2$$**, if it isn't we give it **S_peak = 1**. Each check-in can now get a social score by multiplying the coefficient with the peak hour score: **S = C*S_peak**.
 
 Right, we have now given the check-ins social scores but not the users. We therefore give each user an individual social score that is equals to the mean value of **S** for each of their check-ins.
 
