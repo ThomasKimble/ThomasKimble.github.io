@@ -115,8 +115,7 @@ By comparing rows we can clearly see that the models performance is the poorest 
 <iframe width="630" height="700" frameborder="0" scrolling="no" src="//plotly.com/~ThomasKimble/1.embed?showlink=false&logo=false"></iframe>
 </p>
 
-Surprisingly, the different initialisation methods had a larger impact on the number of collisions than expected. With N = 9 agents, maximal average collisions varied from
-3.4 to 8.6 when using different methods. The *Closest* method outperformed the other two methods in maximal average number of collisions, and by minimal FOV angle values with less than 1 collision on average. We find good performance with this method and FOV angles α ≥ 60° and β ≥ 90°.
+Surprisingly, the different initialisation methods had a larger impact on the number of collisions than expected. With N = 9 agents, maximal average collisions varied from 3.4 to 8.6 when using different methods. The *Closest* method outperformed the other two methods in maximal average number of collisions, and by minimal FOV angle values with less than 1 collision on average. We find good performance with this method and FOV angles α ≥ 60° and β ≥ 90°.
 
 When using the *Goal* method, agents generally start off the simulation with no others in their FOV, therefore leading to minimal heading corrections and imminent collisions that are only seen a moment before impact, and can not be avoided.
 

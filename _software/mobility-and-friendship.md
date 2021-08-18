@@ -78,14 +78,14 @@ define a coefficient **C** for each level 0 category, reflecting how social this
 |            Event            |     1.5     |
 |            Other            |     1.0     |
 
-Second of all, we want to know if a check-in was performed during the peak hours of the venue category. For this we use level 1 categories to be slightly more precise in our categorisation. If a check-in is within the venue's peak hours, we give it a score of **$$S_peak = 2$$**, if it isn't we give it **S_peak = 1**. Each check-in can now get a social score by multiplying the coefficient with the peak hour score: **S = C*S_peak**.
+Second of all, we want to know if a check-in was performed during the peak hours of the venue category. For this we use level 1 categories to be slightly more precise in our categorisation. If a check-in is within the venue's peak hours, we give it a score of **S<sub>peak</sub>= 2**, if it isn't we give it **S<sub>peak</sub> = 1**. Each check-in can now get a social score by multiplying the coefficient with the peak hour score: **S = C*S<sub>peak</sub>**.
 
 Right, we have now given the check-ins social scores but not the users. We therefore give each user an individual social score that is equals to the mean value of **S** for each of their check-ins.
 
 But we're not done here... We also give each user two travel scores! We want to see if mobility influences friendships, therefore we can't leave out travelling.
-First we notice that our friends at Foursquare have given us a level 0 category named *Travel & Transport*, our first travel score **T_category** is defined as the fraction of check-ins within this category over the total number of check-ins. Our second travel score **T_distance** uses a more scientific approach. By looking at the distribution of check-in distances from home. We see that the distribution follows a power law with a dip between 70 and 200km from home. We therefore use the upper value of 200km to define whether a check-in should be considered a *Travel* or not. We define **T_distance** as the fraction of *Travel* check-ins (further than 200km from home) over the total number of check-ins.
+First we notice that our friends at Foursquare have given us a level 0 category named *Travel & Transport*, our first travel score **T<sub>category</sub>** is defined as the fraction of check-ins within this category over the total number of check-ins. Our second travel score **T<sub>distance</sub>** uses a more scientific approach. By looking at the distribution of check-in distances from home. We see that the distribution follows a power law with a dip between 70 and 200km from home. We therefore use the upper value of 200km to define whether a check-in should be considered a *Travel* or not. We define **T<sub>distance</sub>** as the fraction of *Travel* check-ins (further than 200km from home) over the total number of check-ins.
 
-The figure below shows three user's with a high **T_distance** score in orange, and a low **T_distance** in purple. We can clearly see that our definition illustrates how far and how often a user with a high **T_distance** travels.
+The figure below shows three user's with a high **T<sub>distance</sub>** score in orange, and a low **T<sub>distance</sub>** in purple. We can clearly see that our definition illustrates how far and how often a user with a high **T<sub>distance</sub>** travels.
 
 {% include project_data/friendship/travel_plot.html %}
 
