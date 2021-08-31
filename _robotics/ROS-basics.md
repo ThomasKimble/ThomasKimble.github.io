@@ -30,13 +30,13 @@ We added three sensors, one at front of the robot and one on each side, which ar
 Here is a quick schematic of the robot and its dimensions (in *mm*) with the different origin points for the URDF links and joints:
 
 <div class="web-image-full">
-    <img src="../../images/project-images/ROS-basics/robot_model.svg">
+    <img src="../../images/project-images/ros-basics/robot_model.svg">
 </div>
 
 After adding our group number to the robot as well as a few sensor plugins, we could visualise it in *Rviz* and *Gazebo*:
 
 <div class="web-image-full">
-    <img src="../../images/project-images/ROS-basics/robot_viz.png">
+    <img src="../../images/project-images/ros-basics/robot_viz.png">
 </div>
 
 # Velocity Control
@@ -55,12 +55,12 @@ The avoidance is done in three parts and is illustrated in the figure below:
 3. If angle error is lower than a threshold value switch to navigation state
 
 <div class="web-image-ms">
-    <img src="../../images/project-images/ROS-basics/obstacle.svg">
+    <img src="../../images/project-images/ros-basics/obstacle.svg">
 </div>
 
 # Video Demonstration
 
-<video class="web-image-ms" src="/images/project-images/ROS-basics/ROS-Basics.mp4" controls> </video>
+<video class="web-image-ms" src="/images/project-images/ros-basics/ROS-Basics.mp4" controls> </video>
 <br>
 
 # Additional Material
