@@ -1,5 +1,5 @@
 ---
-title: "Navigation and Path Planning for the Thymio Tobot"
+title: "Navigation and Path Planning for the Thymio Robot"
 date: 2020-12-01T12:00:00+2:00
 featured: true
 weight: 3
