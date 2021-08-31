@@ -6,7 +6,7 @@ weight: 3
 layout: project
 ---
 
-I developed an arcade-like game named Rocket-Crash and tested it on the Nintendo DS microprogrammed embedded system. I designed simple graphics and sprites and used a finite state machine to navigate through game modes.
+I developed an arcade-like game named Rocket-Crash and tested it on the Nintendo DS microprogrammed embedded system. I designed simple graphics and sprites and used a state machine to navigate through game modes.
 
 * **Date:** January 2020
 * **Author:** Thomas Kimble
@@ -19,11 +19,25 @@ I developed an arcade-like game named Rocket-Crash and tested it on the Nintendo
 
 # Goal
 
-The goal of this project was to create a game for the Nintendo DS using all of its features, including the both ARM processors, the on board timers and the graphic and sound modules.
+During a semester, we had the goal of getting familiar with the architecture and functionalities of a 32 bit microprocessor. In particular we dealt with memory and different IO peripherals such as bluetooth, wifi, touch screens, buttons and sound. 
 
-# Method
+The goal of this particular project was to create a game for the Nintendo DS using all of its features: 
+both ARM processors, on board timers, graphics, sound, keypad and buttons, touchscreen and external storage.
 
-# Graphics
+# Game
+
+I decided to create and arcade-like game named Rocket-Crash. The aim of the game is to move a rocket around the screen while avoiding platforms. The user can use the keypad and buttons or the touchscreen to navigate through menus and to move the rocket. There are two modes in the game:
+* **Infinite**: Get the highest score before crashing
+* **Level**: Complete levels of a set length
+
+Different *powers* can be obtained if the rocket hits a *power cube*. These powers are the following and can be seen in the graphics shown below:
+* **x2**: Doubles the rocket's movement speed
+* **÷2**: Halves the rocket's movement speed
+* **Teleport**: The rocket can teleport from one side of the screen to the other
+* **Invert**: Inverts the rocket's movement
+* **Bomb**: Instantly explodes causing a rocket crash
+
+In addition, high scores are saved and can be accessed via the main menu. The game can be paused and restarted at any time.
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -64,7 +78,15 @@ The goal of this project was to create a game for the Nintendo DS using all of i
   <span class="dot" onclick="currentSlide(5)"></span>
 </div>
 
-# Results
+<br/><br/>
+
+The game uses different backgrounds as layers moving at different speeds to give the illusion of vertical movement. This was done by using the on bord timers. The numbers for the score, the current powers, the platforms and the keypad selector were made to be *tiles* and added as a background layer on top of the main and sub graphics. The rocket and the *power cubes* were designed as sprites to be able to move independantly of the backgrounds.
+
+The game follows a state machine between 5 states: Menu, Play, Pause, Over and Stats. These are self explanatory in their nomenclature. The user can navigate between each state by using the keypad or the touch screen as shown here:
+
+<div class="web-image-full">
+    <img src="../../images/project-images/rocket/rocket_states.svg">
+</div>
 
 
 # Additional Material
