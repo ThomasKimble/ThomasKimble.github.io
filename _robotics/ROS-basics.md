@@ -60,7 +60,7 @@ The avoidance is done in three parts and is illustrated in the figure below:
 
 # Video Demonstration
 
-<video class="web-image-ms" src="/images/project-images/ros-basics/ROS-Basics.mp4" controls> </video>
+<video class="web-image-lg" src="/images/project-images/ros-basics/ROS-Basics.mp4" controls> </video>
 <br>
 
 # Additional Material
