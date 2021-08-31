@@ -83,9 +83,6 @@ For filtering, we used a Kalman filter. We assume thta the system respects a con
 
 Every five loops of the algorithm, we apply corrections to the robot's pose if it has deviated from its trajectory. If the deviation is larger than a user defined threshold, we instruct the algorithm to recalculate a new trajectory using A*.
 
-# Conclusions
-
-
 # Additional Material
 
 For any more information on the project, please don't hesitate to contact me <a href="/contact">here</a>, or check out the jupyter notebook below.
